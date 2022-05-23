@@ -1,17 +1,17 @@
 <?php
 
-namespace Nextend\Framework\Font\Block\FontManager;
+namespace Nextend\Framework\Style\Block\StyleManager;
 
 /**
- * @var BlockFontManager $this
+ * @var BlockStyleManager $this
  */
 ?>
-<div id="n2-lightbox-font" class="n2_fullscreen_editor">
+<div id="n2-lightbox-style" class="n2_fullscreen_editor">
     <div class="n2_fullscreen_editor__overlay"></div>
     <div class="n2_fullscreen_editor__window">
         <div class="n2_fullscreen_editor__nav_bar">
             <div class="n2_fullscreen_editor__nav_bar_label">
-                <?php n2_e('Font manager'); ?>
+                <?php n2_e('Style manager'); ?>
             </div>
             <div class="n2_fullscreen_editor__nav_bar_actions">
                 <?php $this->displayTopBar(); ?>

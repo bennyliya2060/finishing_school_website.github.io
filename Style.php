@@ -1,103 +1,92 @@
 <?php
 
-namespace Nextend\Framework\Form\Element;
+namespace Nextend\Framework\Parser;
 
-use Nextend\Framework\Asset\Js\Js;
-use Nextend\Framework\ResourceTranslator\ResourceTranslator;
-use Nextend\Framework\Style\StyleManager;
-use Nextend\Framework\Style\StyleParser;
-use Nextend\Framework\View\Html;
+use Nextend\Framework\Misc\Base64;
 
-class Style extends AbstractFieldHidden {
+class Style {
 
-    protected $mode = '';
+    private $_style;
 
-    protected $font = '';
+    public function __construct($style) {
+        $decoded = $style;
+        if ($decoded[0] != '{') {
+            $decoded = Base64::decode($decoded);
+        }
 
-    protected $font2 = '';
-
-    protected $style2 = '';
-
-    protected $preview = '';
-
-    protected $css = '';
-
-    protected function addScript() {
-
-        StyleManager::enqueue($this->getForm());
-
-        $preview = preg_replace_callback('/url\(\'(.*?)\'\)/', array(
-            $this,
-            'fixPreviewImages'
-        ), $this->preview);
-
-        Js::addInline('new _N2.FormElementStyle("' . $this->fieldID . '", {
-            mode: "' . $this->mode . '",
-            label: "' . $this->label . '",
-            font: "' . $this->font . '",
-            font2: "' . $this->font2 . '",
-            style2: "' . $this->style2 . '",
-            preview: ' . json_encode($preview) . '
-        });');
+        $this->_style = json_decode($decoded, true);
     }
 
-    protected function fetchElement() {
+    public function printTab($tab = '') {
+        $style = '';
+        if (isset($this->_style[$tab])) {
+            $tab   = &$this->_style[$tab];
+            $extra = '';
+            if (isset($tab['extra'])) {
+                $extra = $tab['extra'];
+                unset($tab['extra']);
+            }
+            foreach ($tab as $k => $v) {
+                $style .= $this->parse($k, $v);
+            }
+            $style .= $this->parse('extra', $extra);
+        }
 
-        $this->addScript();
-
-        return Html::tag('div', array(
-            'class' => 'n2_field_style'
-        ), n2_('Style') . parent::fetchElement());
+        return $style;
     }
 
-    public function fixPreviewImages($matches) {
-        return "url(" . ResourceTranslator::toUrl($matches[1]) . ")";
+    public function parse($property, $value) {
+        $fn = 'parse' . $property;
+
+        return $this->$fn($value);
     }
 
-    public function getValue() {
+    public function parseBackgroundColor($v) {
+        $hex = Color::hex82hex($v);
+        if ($hex[1] == 'ff') {
+            return 'background: #' . $hex[0] . ';';
+        }
 
-        return StyleParser::parse(parent::getValue());
+        $rgba = Color::hex2rgba($v);
+
+        return 'background: RGBA(' . $rgba[0] . ',' . $rgba[1] . ',' . $rgba[2] . ',' . round($rgba[3] / 127, 2) . ');';
     }
 
-    /**
-     * @param string $mode
-     */
-    public function setMode($mode) {
-        $this->mode = $mode;
+    public function parsePadding($v) {
+        $padding   = explode('|*|', $v);
+        $unit      = array_pop($padding);
+        $padding[] = '';
+
+        return 'padding:' . implode($unit . ' ', $padding) . ';';
     }
 
-    /**
-     * @param string $font
-     */
-    public function setFont($font) {
-        $this->font = $font;
+    public function parseBoxShadow($v) {
+        $boxShadow = explode('|*|', $v);
+
+        if ($boxShadow[0] == '0' && $boxShadow[1] == '0' && $boxShadow[2] == '0' && $boxShadow[3] == '0') {
+            return 'box-shadow: none;';
+        } else {
+            $rgba = Color::hex2rgba($boxShadow[4]);
+
+            return 'box-shadow: ' . $boxShadow[0] . 'px ' . $boxShadow[1] . 'px ' . $boxShadow[2] . 'px ' . $boxShadow[3] . 'px RGBA(' . $rgba[0] . ',' . $rgba[1] . ',' . $rgba[2] . ',' . round($rgba[3] / 127, 2) . ');';
+        }
     }
 
-    /**
-     * @param string $font2
-     */
-    public function setFont2($font2) {
-        $this->font2 = $font2;
+    public function parseBorder($v) {
+        $border = explode('|*|', $v);
+        $rgba   = Color::hex2rgba($border[2]);
+
+        return 'border: ' . $border[0] . 'px ' . $border[1] . ' RGBA(' . $rgba[0] . ',' . $rgba[1] . ',' . $rgba[2] . ',' . round($rgba[3] / 127, 2) . ');';
     }
 
-    /**
-     * @param string $style2
-     */
-    public function setStyle2($style2) {
-        $this->style2 = $style2;
+    public function parseBorderRadius($v) {
+        $radius   = explode('|*|', $v);
+        $radius[] = '';
+
+        return 'border-radius:' . $v . 'px;';
     }
 
-    /**
-     * @param string $preview
-     */
-    public function setPreview($preview) {
-        $this->preview = $preview;
-    }
-
-    /**
-     * @param string $css
-     */
-    public function setCss($css) {
-        $this->css = $css;
+    public function parseExtra($v) {
+        return str_replace("\n", '', $v);
     }
 }

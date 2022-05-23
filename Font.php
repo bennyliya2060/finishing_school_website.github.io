@@ -1,76 +1,208 @@
 <?php
 
-namespace Nextend\Framework\Form\Element;
+namespace Nextend\Framework\Parser;
 
-use Nextend\Framework\Asset\Js\Js;
-use Nextend\Framework\Font\FontManager;
-use Nextend\Framework\Font\FontParser;
-use Nextend\Framework\View\Html;
+use Nextend\Framework\Asset\Fonts\Google\Google;
 
-class Font extends AbstractFieldHidden {
+class Font {
 
-    protected $mode = '';
+    /**
+     * @var array
+     */
+    private $_font;
 
-    protected $css = '';
-
-    protected $style2 = '';
-
-    protected $preview = '';
-
-
-    protected function addScript() {
-
-        FontManager::enqueue($this->getForm());
-
-        Js::addInline('new _N2.FormElementFont("' . $this->fieldID . '", {
-            mode: "' . $this->mode . '",
-            label: "' . $this->label . '",
-            style: "' . $this->style . '",
-            style2: "' . $this->style2 . '",
-            preview: ' . json_encode($this->preview) . '
-        });');
-    }
-
-    protected function fetchElement() {
-
-        $this->addScript();
-
-        return Html::tag('div', array(
-            'class' => 'n2_field_font'
-        ), n2_('Font') . parent::fetchElement());
-    }
-
-    public function getValue() {
-
-        return FontParser::parse(parent::getValue());
+    public function __construct($font) {
+        $this->_font = json_decode($font, true);
     }
 
     /**
-     * @param string $mode
+     * @param string $tab
+     *
+     * @return string
      */
-    public function setMode($mode) {
-        $this->mode = $mode;
+    public function printTab($tab = '') {
+        if ($tab == '') $tab = $this->_font['firsttab'];
+        $style = '';
+        if (isset($this->_font[$tab])) {
+            $tab   = &$this->_font[$tab];
+            $extra = '';
+            if (isset($tab['extra'])) {
+                $extra = $tab['extra'];
+                unset($tab['extra']);
+            }
+            foreach ($tab as $k => $v) {
+                $style .= $this->parse($k, $v);
+            }
+            $style .= $this->parse('extra', $extra);
+        }
+
+        return $style;
     }
 
     /**
-     * @param string $css
+     * @param        $target
+     * @param string $source
      */
-    public function setCss($css) {
-        $this->css = $css;
+    public function mixinTab($target, $source = '') {
+        if ($source == '') $source = $this->_font['firsttab'];
+        $this->_font[$target] = array_merge($this->_font[$source], $this->_font[$target]);
     }
 
     /**
-     * @param string $style2
+     * @param $property
+     * @param $value
+     *
+     * @return mixed
      */
-    public function setStyle2($style2) {
-        $this->style2 = $style2;
+    public function parse($property, $value) {
+        $fn = 'parse' . $property;
+
+        return $this->$fn($value);
     }
 
     /**
-     * @param string $preview
+     * @param $v
+     *
+     * @return string
      */
-    public function setPreview($preview) {
-        $this->preview = $preview;
+    public function parseColor($v) {
+        $hex = Color::hex82hex($v);
+        if ($hex[1] == 'ff') {
+            return 'color: #' . $hex[0] . ';';
+        }
+
+        $rgba = Color::hex2rgba($v);
+
+        return 'color: RGBA(' . $rgba[0] . ',' . $rgba[1] . ',' . $rgba[2] . ',' . round($rgba[3] / 127, 2) . ');';
+
     }
 
+    /**
+     * @param $v
+     *
+     * @return string
+     */
+    public function parseSize($v) {
+        return 'font-size:' . Common::parse($v, '') . ';';
+    }
+
+    /**
+     * @param $v
+     *
+     * @return string
+     */
+    public function parseTShadow($v) {
+        $v    = Common::parse($v);
+        $rgba = Color::hex2rgba($v[3]);
+        if ($v[0] == 0 && $v[1] == 0 && $v[2] == 0) return 'text-shadow: none;';
+
+        return 'text-shadow: ' . $v[0] . 'px ' . $v[1] . 'px ' . $v[2] . 'px RGBA(' . $rgba[0] . ',' . $rgba[1] . ',' . $rgba[2] . ',' . round($rgba[3] / 127, 2) . ');';
+    }
+
+    /**
+     * @param $v
+     *
+     * @return string
+     */
+    public function parseAfont($v) {
+        return 'font-family: ' . $this->loadFont($v) . ';';
+    }
+
+    /**
+     * @param $v
+     *
+     * @return string
+     */
+    public function parseLineHeight($v) {
+        if ($v == '') return '';
+
+        return 'line-height: ' . $v . ';';
+    }
+
+    /**
+     * @param $v
+     *
+     * @return string
+     */
+    public function parseBold($v) {
+        if ($v == '1') return 'font-weight: bold;';
+
+        return 'font-weight: normal;';
+    }
+
+    /**
+     * @param $v
+     *
+     * @return string
+     */
+    public function parseItalic($v) {
+        if ($v == '1') return 'font-style: italic;';
+
+        return 'font-style: normal;';
+    }
+
+    /**
+     * @param $v
+     *
+     * @return string
+     */
+    public function parseUnderline($v) {
+        if ($v == '1') return 'text-decoration: underline;';
+
+        return 'text-decoration: none;';
+    }
+
+    /**
+     * @param $v
+     *
+     * @return string
+     */
+    public function parsePaddingLeft($v) {
+        return '';
+    }
+
+    /**
+     * @param $v
+     *
+     * @return string
+     */
+    public function parseAlign($v) {
+        return 'text-align: ' . $v . ';';
+    }
+
+    /**
+     * @param $v
+     *
+     * @return string
+     */
+    public function parseReset($v) {
+        return '';
+    }
+
+    public function parseExtra($v) {
+        return $v;
+    }
+
+    /**
+     * @param $families
+     *
+     * @return mixed
+     */
+    public function loadFont($families) {
+        preg_match_all("/google\(.*?family=(.*?)\);\)/", $families, $out, PREG_SET_ORDER);
+        foreach ($out as $f) {
+            preg_match('/(.*?)(:(.*?))?$/', $f[1], $g);
+            $family = str_replace('+', ' ', $g[1]);
+            $styles = 400;
+            if (isset($g[3]) && !empty($g[3])) {
+                $styles = $g[3];
+            }
+            foreach (explode(',', $styles) as $style) {
+                Google::addFont($family, $style);
+            }
+            $families = str_replace($f[0], "'" . $family . "'", $families);
+        }
+
+        return $families;
+    }
 }
