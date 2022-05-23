@@ -1,178 +1,243 @@
 <?php
-/**
- * Media management action handler.
- *
- * @package WordPress
- * @subpackage Administration
- */
 
-/** Load WordPress Administration Bootstrap */
-require_once __DIR__ . '/admin.php';
-
-$parent_file  = 'upload.php';
-$submenu_file = 'upload.php';
-
-wp_reset_vars( array( 'action' ) );
-
-switch ( $action ) {
-	case 'editattachment':
-		$attachment_id = (int) $_POST['attachment_id'];
-		check_admin_referer( 'media-form' );
-
-		if ( ! current_user_can( 'edit_post', $attachment_id ) ) {
-			wp_die( __( 'Sorry, you are not allowed to edit this attachment.' ) );
-		}
-
-		$errors = media_upload_form_handler();
-
-		if ( empty( $errors ) ) {
-			$location = 'media.php';
-			$referer  = wp_get_original_referer();
-			if ( $referer ) {
-				if ( false !== strpos( $referer, 'upload.php' ) || ( url_to_postid( $referer ) === $attachment_id ) ) {
-					$location = $referer;
-				}
-			}
-			if ( false !== strpos( $location, 'upload.php' ) ) {
-				$location = remove_query_arg( 'message', $location );
-				$location = add_query_arg( 'posted', $attachment_id, $location );
-			} elseif ( false !== strpos( $location, 'media.php' ) ) {
-				$location = add_query_arg( 'message', 'updated', $location );
-			}
-			wp_redirect( $location );
-			exit;
-		}
-
-		// No break.
-	case 'edit':
-		// Used in the HTML title tag.
-		$title = __( 'Edit Media' );
-
-		if ( empty( $errors ) ) {
-			$errors = null;
-		}
-
-		if ( empty( $_GET['attachment_id'] ) ) {
-			wp_redirect( admin_url( 'upload.php' ) );
-			exit;
-		}
-		$att_id = (int) $_GET['attachment_id'];
-
-		if ( ! current_user_can( 'edit_post', $att_id ) ) {
-			wp_die( __( 'Sorry, you are not allowed to edit this attachment.' ) );
-		}
-
-		$att = get_post( $att_id );
-
-		if ( empty( $att->ID ) ) {
-			wp_die( __( 'You attempted to edit an attachment that doesn&#8217;t exist. Perhaps it was deleted?' ) );
-		}
-		if ( 'attachment' !== $att->post_type ) {
-			wp_die( __( 'You attempted to edit an item that isn&#8217;t an attachment. Please go back and try again.' ) );
-		}
-		if ( 'trash' === $att->post_status ) {
-			wp_die( __( 'You can&#8217;t edit this attachment because it is in the Trash. Please move it out of the Trash and try again.' ) );
-		}
-
-		add_filter( 'attachment_fields_to_edit', 'media_single_attachment_fields_to_edit', 10, 2 );
-
-		wp_enqueue_script( 'wp-ajax-response' );
-		wp_enqueue_script( 'image-edit' );
-		wp_enqueue_style( 'imgareaselect' );
-
-		get_current_screen()->add_help_tab(
-			array(
-				'id'      => 'overview',
-				'title'   => __( 'Overview' ),
-				'content' =>
-					'<p>' . __( 'This screen allows you to edit fields for metadata in a file within the media library.' ) . '</p>' .
-					'<p>' . __( 'For images only, you can click on Edit Image under the thumbnail to expand out an inline image editor with icons for cropping, rotating, or flipping the image as well as for undoing and redoing. The boxes on the right give you more options for scaling the image, for cropping it, and for cropping the thumbnail in a different way than you crop the original image. You can click on Help in those boxes to get more information.' ) . '</p>' .
-					'<p>' . __( 'Note that you crop the image by clicking on it (the Crop icon is already selected) and dragging the cropping frame to select the desired part. Then click Save to retain the cropping.' ) . '</p>' .
-					'<p>' . __( 'Remember to click Update Media to save metadata entered or changed.' ) . '</p>',
-			)
-		);
-
-		get_current_screen()->set_help_sidebar(
-			'<p><strong>' . __( 'For more information:' ) . '</strong></p>' .
-			'<p>' . __( '<a href="https://wordpress.org/support/article/edit-media/">Documentation on Edit Media</a>' ) . '</p>' .
-			'<p>' . __( '<a href="https://wordpress.org/support/">Support</a>' ) . '</p>'
-		);
-
-		require_once ABSPATH . 'wp-admin/admin-header.php';
-
-		$parent_file = 'upload.php';
-		$message     = '';
-		$class       = '';
-		if ( isset( $_GET['message'] ) ) {
-			switch ( $_GET['message'] ) {
-				case 'updated':
-					$message = __( 'Media file updated.' );
-					$class   = 'updated';
-					break;
-			}
-		}
-		if ( $message ) {
-			echo "<div id='message' class='$class'><p>$message</p></div>\n";
-		}
-
-		?>
-
-	<div class="wrap">
-	<h1 class="wp-heading-inline">
-		<?php
-		echo esc_html( $title );
-		?>
-</h1>
-
-		<?php
-		if ( current_user_can( 'upload_files' ) ) {
-			?>
-	<a href="media-new.php" class="page-title-action"><?php echo esc_html_x( 'Add New', 'file' ); ?></a>
-<?php } ?>
-
-	<hr class="wp-header-end">
-
-	<form method="post" class="media-upload-form" id="media-single-form">
-	<p class="submit" style="padding-bottom: 0;">
-		<?php submit_button( __( 'Update Media' ), 'primary', 'save', false ); ?>
-	</p>
-
-	<div class="media-single">
-	<div id="media-item-<?php echo $att_id; ?>" class="media-item">
-		<?php
-		echo get_media_item(
-			$att_id,
-			array(
-				'toggle'     => false,
-				'send'       => false,
-				'delete'     => false,
-				'show_title' => false,
-				'errors'     => ! empty( $errors[ $att_id ] ) ? $errors[ $att_id ] : null,
-			)
-		);
-		?>
-	</div>
-	</div>
-
-		<?php submit_button( __( 'Update Media' ), 'primary', 'save' ); ?>
-	<input type="hidden" name="post_id" id="post_id" value="<?php echo isset( $post_id ) ? esc_attr( $post_id ) : ''; ?>" />
-	<input type="hidden" name="attachment_id" id="attachment_id" value="<?php echo esc_attr( $att_id ); ?>" />
-	<input type="hidden" name="action" value="editattachment" />
-		<?php wp_original_referer_field( true, 'previous' ); ?>
-		<?php wp_nonce_field( 'media-form' ); ?>
-
-	</form>
-
-	</div>
-
-		<?php
-
-		require_once ABSPATH . 'wp-admin/admin-footer.php';
-
-		exit;
-
-	default:
-		wp_redirect( admin_url( 'upload.php' ) );
-		exit;
-
+if ( ! defined( 'ABSPATH' ) ) {
+	exit; // Exit if accessed directly
 }
+
+if ( ! class_exists( 'ACF_Media' ) ) :
+
+	class ACF_Media {
+
+		/**
+		 * Constructor.
+		 *
+		 * @date    23/06/12
+		 * @since   5.0.0
+		 *
+		 * @param   void
+		 * @return  void
+		 */
+		public function __construct() {
+
+			// Localize media strings.
+			add_action( 'acf/enqueue_scripts', array( $this, 'enqueue_scripts' ) );
+
+			// Save files uploaded from basic `$_FILE` field.
+			add_action( 'acf/save_post', array( $this, 'save_files' ), 5, 1 );
+
+			// Hook into Media Upload to run additional logic.
+			add_filter( 'wp_handle_upload_prefilter', array( $this, 'handle_upload_prefilter' ), 10, 1 );
+
+			// Hook into Media Modal Query to run additional logic.
+			add_action( 'wp_ajax_query-attachments', array( $this, 'wp_ajax_query_attachments' ), -1 );
+		}
+
+		/**
+		 * Fires when ACF scrtips are enqueued.
+		 *
+		 * @date    27/4/18
+		 * @since   5.6.9
+		 *
+		 * @param   void
+		 * @return  void
+		 */
+		public function enqueue_scripts() {
+			if ( wp_script_is( 'acf-input' ) ) {
+				acf_localize_text(
+					array(
+						'Select.verb'           => _x( 'Select', 'verb', 'acf' ),
+						'Edit.verb'             => _x( 'Edit', 'verb', 'acf' ),
+						'Update.verb'           => _x( 'Update', 'verb', 'acf' ),
+						'Uploaded to this post' => __( 'Uploaded to this post', 'acf' ),
+						'Expand Details'        => __( 'Expand Details', 'acf' ),
+						'Collapse Details'      => __( 'Collapse Details', 'acf' ),
+						'Restricted'            => __( 'Restricted', 'acf' ),
+						'All images'            => __( 'All images', 'acf' ),
+					)
+				);
+				acf_localize_data(
+					array(
+						'mimeTypeIcon' => wp_mime_type_icon(),
+						'mimeTypes'    => get_allowed_mime_types(),
+					)
+				);
+			}
+		}
+
+		/**
+		 * Uploads attachments found in the basic `$_FILES` array.
+		 *
+		 * @date    24/10/2014
+		 * @since   5.0.9
+		 *
+		 * @param   string|int $post_id The post ID being saved.
+		 * @return  void
+		 */
+		public function save_files( $post_id = 0 ) {
+			if ( isset( $_FILES['acf']['name'] ) ) {
+				acf_upload_files();
+			}
+		}
+
+		/**
+		 * Filters data for the current file being uploaded.
+		 *
+		 * @date    16/02/2015
+		 * @since   5.1.5
+		 *
+		 * @param   array $file An array of data for a single file.
+		 * @return  array
+		 */
+		public function handle_upload_prefilter( $file ) {
+			$field = $this->get_source_field();
+			if ( ! $field ) {
+				return $file;
+			}
+
+			// Validate the attachment and append any errors.
+			$errors = acf_validate_attachment( $file, $field, 'upload' );
+
+			/**
+			 * Filters the errors for a file before it is uploaded to WordPress.
+			 *
+			 * @date    16/02/2015
+			 * @since   5.1.5
+			 *
+			 * @param   array $errors An array of errors.
+			 * @param   array $file An array of data for a single file.
+			 * @param   array $field The field array.
+			 */
+			$errors = apply_filters( "acf/upload_prefilter/type={$field['type']}", $errors, $file, $field );
+			$errors = apply_filters( "acf/upload_prefilter/name={$field['_name']}", $errors, $file, $field );
+			$errors = apply_filters( "acf/upload_prefilter/key={$field['key']}", $errors, $file, $field );
+			$errors = apply_filters( 'acf/upload_prefilter', $errors, $file, $field );
+
+			// Append errors.
+			if ( ! empty( $errors ) ) {
+				$file['error'] = implode( "\n", $errors );
+			}
+
+			// Ensure newly uploaded image contains "preview_size" within the "size" data.
+			add_filter( 'image_size_names_choose', array( $this, 'image_size_names_choose' ), 10, 1 );
+
+			// Return.
+			return $file;
+		}
+
+
+
+
+		/**
+		 * Returns the field responsible for the current Media query or upload context.
+		 *
+		 * @date    21/5/21
+		 * @since   5.9.7
+		 *
+		 * @param   void
+		 * @return  array| false.
+		 */
+		private function get_source_field() {
+			$field = false;
+
+			// Search for field key within available data.
+			// Case 1) Media modal query.
+			if ( isset( $_POST['query']['_acfuploader'] ) ) {
+				$field_key = (string) $_POST['query']['_acfuploader'];
+
+				// Case 2) Media modal upload.
+			} elseif ( isset( $_POST['_acfuploader'] ) ) {
+				$field_key = (string) $_POST['_acfuploader'];
+			}
+
+			// Attempt to load field.
+			// Note the `acf_get_field()` function will return false if not found.
+			if ( isset( $field_key ) ) {
+				$field = acf_get_field( $field_key );
+			}
+			return $field;
+		}
+
+		/**
+		 * Fires during the WP Modal Query AJAX call.
+		 *
+		 * @date    26/06/2015
+		 * @since   5.2.3
+		 *
+		 * @param   void
+		 * @return  void
+		 */
+		function wp_ajax_query_attachments() {
+			if ( $this->get_source_field() ) {
+				add_filter( 'wp_prepare_attachment_for_js', array( $this, 'wp_prepare_attachment_for_js' ), 10, 3 );
+				add_filter( 'image_size_names_choose', array( $this, 'image_size_names_choose' ), 10, 1 );
+			} else {
+				add_filter( 'wp_prepare_attachment_for_js', array( $this, 'clear_acf_errors_for_core_requests' ), 5, 3 );
+			}
+		}
+
+		/**
+		 * Append acf_errors false for non-acf media library calls to prevent media library caching.
+		 *
+		 * @date    31/8/21
+		 * @since   5.10.2
+		 *
+		 * @param   array       $response Array of prepared attachment data.
+		 * @param   WP_Post     $attachment Attachment object.
+		 * @param   array|false $meta Array of attachment meta data, or false if there is none.
+		 * @return  array
+		 */
+		function clear_acf_errors_for_core_requests( $response, $attachment, $meta ) {
+			$response['acf_errors'] = false;
+			return $response;
+		}
+
+		/**
+		 * Filters attachment data as it is being prepared for JS.
+		 *
+		 * @date    21/5/21
+		 * @since   5.9.7
+		 *
+		 * @param   array       $response Array of prepared attachment data.
+		 * @param   WP_Post     $attachment Attachment object.
+		 * @param   array|false $meta Array of attachment meta data, or false if there is none.
+		 * @return  array
+		 */
+		function wp_prepare_attachment_for_js( $response, $attachment, $meta ) {
+			$field = $this->get_source_field();
+
+			// Validate the attachment and append any errors.
+			$errors                 = acf_validate_attachment( $response, $field, 'prepare' );
+			$response['acf_errors'] = false;
+			if ( ! empty( $errors ) ) {
+				$response['acf_errors'] = implode( '<br />', $errors );
+			}
+
+			// Return.
+			return $response;
+		}
+
+		/**
+		 * Filters the names and labels of the default image sizes.
+		 *
+		 * @date    21/5/21
+		 * @since   5.9.7
+		 *
+		 * @param   array $size_names Array of image size labels keyed by their name.
+		 * @return  array
+		 */
+		function image_size_names_choose( $size_names ) {
+			$field = $this->get_source_field();
+
+			// Append "preview_size" setting to array of image sizes so WP will include in prepared JS data.
+			if ( isset( $field['preview_size'] ) ) {
+				$name                = (string) $field['preview_size'];
+				$size_names[ $name ] = $name; // Don't worry about size label, it is never used.
+			}
+			return $size_names;
+		}
+	}
+
+	// Instantiate.
+	acf_new_instance( 'ACF_Media' );
+
+endif; // class_exists check
