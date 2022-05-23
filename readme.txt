@@ -1,1839 +1,646 @@
-=== Photo Gallery by 10Web - Mobile-Friendly Image Gallery ===
-Contributors: webdorado,wdsupport,photogallerysupport,10web
-Tags: gallery, photo gallery, image gallery, responsive gallery, wordpress gallery plugin, photo albums, gallery slider, gallery lightbox, wordpress photo gallery plugin, fullscreen gallery, watermarking, video gallery
-Requires at least: 4.6
+=== Quiz And Survey Master - Best Quiz, Exam and Survey Plugin for WordPress ===
+Contributors: quizsurvey,expresstech
+Tags: quiz, survey, lead, test, score, exam, questionnaire, question,wordpress quiz plugin
+Requires at least: 4.9
 Tested up to: 5.8
-Stable tag: 1.5.86
-License: GPLv2 or later
+Requires PHP: 5.4
+Stable tag: 7.3.7
+License: GPLv2
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Photo Gallery is a powerful image gallery plugin with a list of advanced options for creating responsive image galleries with beautiful lightbox. Add the plugin with cool gallery views.
+Easily create exams, generate leads, surveys and any type of quiz with our popular WordPress Quiz Plugin. Custom flows, emails and create leaderboard
 
 == Description ==
 
-Photo Gallery is the leading plugin for building beautiful mobile-friendly galleries in a few minutes.
+= Demoes! =
+* [Sample Quiz](https://quizandsurveymaster.com/quiz/sample-quiz/?utm_source=readme&utm_medium=plugin&utm_content=sample-quiz&utm_campaign=qsm_plugin)
+* [Sample Survey](https://quizandsurveymaster.com/quiz/sample-survey/?utm_source=readme&utm_medium=plugin&utm_content=sample-survey&utm_campaign=qsm_plugin)
+* [Personality Quiz](https://quizandsurveymaster.com/quiz/personality-quiz/?utm_source=readme&utm_medium=plugin&utm_campaign=qsm_plugin)
+* [Quiz with Leaderboard](https://demo.quizandsurveymaster.com/advanced-leaderboard-demo/?utm_source=readme&utm_medium=plugin&utm_campaign=qsm_plugin)
+* [Popup Quiz](https://quizandsurveymaster.com/simple-popup-demo/?utm_source=readme&utm_medium=plugin&utm_campaign=qsm_plugin)
+* [Flashcards](https://demo.quizandsurveymaster.com/flash-card-demo/?utm_source=readme&utm_medium=plugin&utm_campaign=qsm_plugin)
+* [Paid Quiz](https://demo.quizandsurveymaster.com/payment-integration-demo/?utm_source=readme&utm_medium=plugin&utm_campaign=qsm_plugin)
 
-= Useful Links: =
+= Themes =
+* [Theme Breeze](https://themes.quizandsurveymaster.com/breeze-qsm-theme-demo/?utm_source=readme&utm_medium=plugin&utm_campaign=qsm_plugin)
+* [Theme Fragrance](https://themes.quizandsurveymaster.com/fragrance-qsm-theme-demo/?utm_source=readme&utm_medium=plugin&utm_campaign=qsm_plugin)
+* [Theme Ivory](https://themes.quizandsurveymaster.com/ivory-qsm-theme-demo/?utm_source=readme&utm_medium=plugin&utm_campaign=qsm_plugin)
+* [Theme Pool](https://themes.quizandsurveymaster.com/pool-qsm-theme-demo/?utm_source=readme&utm_medium=plugin&utm_campaign=qsm_plugin)
 
-[Live Demo](https://demo.10web.io/photo-gallery/)
+= Easily Create Quiz or Surveys For Your Users =
+Quiz and Survey Master is the easiest [WordPress Quiz Plugin](https://quizandsurveymaster.com/) which can be used to create engaging content to drive traffic and increase user engagement. Everything from viral quiz, trivia quiz, customer satisfaction surveys to employee surveys. This plugin is the ultimate marketing tool for your website.
 
+[youtube https://www.youtube.com/watch?v=DyiCCNnDpHk]
 
-[Premium Photo Gallery by 10Web](https://10web.io/plugins/wordpress-photo-gallery/)
+= Customize Text =
+You can customize anything your users will see and engage with. Everything from the text blocks throughout the quiz or survey to the submit button. You can even use "template variables" to generate personalized text for your users.
 
+= Question Types =
+You can have **multiple choice** (radio buttons), **true and false**, **open answer** question, **drop down**, **multiple response** (checkboxes), **fill in the blank**, **number**, **captcha**, **polar** (slider) and **accept**. We release more questions types with every major release.
 
-[Special Offer for all Premium Plugins](https://10web.io/plugins-bundle-pricing/)
+= Customize Results Based on Score =
+Using our quiz builder plugin, you can customize the results page based on the user's score.
 
-https://www.youtube.com/watch?v=wCpF0BifvI8
+= Emails After Quiz =
+After the user takes a quiz or survey, you can have the plugin email you and the user with results. This too can be customized with your own text.
 
+= Flexibility =
+Your quiz or survey can be graded with an incorrect/correct system or a points-based system. Or not at all. You ask for contact information at the beginning or the end and you decide which contact fields are required. You can decide to use all the questions or only a select few chosen at random. You can also set the number of questions per page or have all the questions on one page.
 
-If you’re looking for a user friendly and feature rich plugin to add responsive galleries and albums to your website, Photo Gallery plugin can be the best option for you. It’s simple to use yet packed with powerful functionality, allowing you to create anything from simple to complex photo galleries. Photo Gallery  comes packed with stunning layout options, gallery and album views, multiple widgets and a number of extensions that take its functionality even further.  WordPress Photo Gallery is a great choice for photography websites and blogs,  as well as sites that want to have robust image galleries with easy navigation.
-Check the extensive feature list of the plugin bellow, have a look at the plugin demo and give it a try.
+= Categories =
+You can assign categories to your questions using our quiz maker plugin. You can then show the user their score in a **particular** category or an average score of the categories.
 
+= Countdown Timer =
+Add countdown timer to your quizzes and effectively create skills assessment or online exams on your website.
 
-== Benefits ==
-*   **Increased visitor engagement** -  Images and photos grab attention and make websites more engaging. Using images in your posts and pages will result in increased visitor engagement and can give a boost on your posts’ pageviews.
-*   **Enhanced SEO** - Adding relevant tags and metadata to the images can enhance your SEO and provide more visibility in relevant search results in Google.
-*   **Better page navigation** - Organized galleries and albums will make your website look more professional, easy to navigate and result in a better user experience.
-*   **Modern web design** - Relevant  high-resolution photos displayed in beautiful layouts are an integral part of a well-designed website that gets results.
-*   **Full Control** - Plugin gives you flexibility in terms of the design and customization of your galleries. You’ll get full control over the style, optimization and display of visual content on your website.
-*   **Support** - Get timely and effective support to all its users. We keep standards high and response time low.
+= Lead Generation =
+You can integrate Mailchimp, Activecampaign, Zapier, Campaign Monitor, Get Response to your quiz or surveys in order to create drip email campaigns and reachout to your audience. Checkout our [integrations](https://quizandsurveymaster.com/downloads/category/integrations/).
 
-== What’s in it ==
+= Other Useful Features =
 
-= CUSTOMIZABLE VIEWS =
+* Allow the user to share the results on *social networks*
+* Show all questions on one page or have only a set number of questions per page
+* Require user to be logged in
+* Schedule when the quiz or survey should be active
+* **Require** certain or all questions to be answered
+* Limit amount of total entries to quiz or survey
+* Can set amount of tries a user has to take the quiz or survey
+* Can enable **comment boxes** for each question and/or comment section at the end of the quiz or survey
+* Can enable **hints** for questions
+* Can show user why the answer is the correct answer
+* Questions can be in predetermined order or random
+* Keep track how long a user takes on the quiz or survey
+* Able to set up time limits on the quiz or survey
+* Create and display math formulas
+* And **Much** More...
 
-Photo Gallery provides a number of view options to organize your galleries and albums in beautiful views, including Slideshow, Thumbnails, Masonry (Premium version), Image Browser, Extended and Compact Album, Blog Style (Premium version),  Mosaic (Premium version). The layouts give you the flexibility to customize them to match your needs.
+= QSM Addons =
+Quiz And Survey Master is fully functional and is packed with tons of features that will meet the needs of most, we do offer various extra features including:
 
-= UNLIMITED PHOTOS, GALLERIES AND ALBUMS =
+**Free Add-ons**
 
-Sounds great, right? With plugin you can have as many galleries and albums as you want, and stuff them with unlimited number of photos and videos. Kinda unlimited everything.
+* [Certificates](https://quizandsurveymaster.com/downloads/certificate/?utm_source=readme&utm_medium=plugin&utm_campaign=qsm_plugin&utm_content=certificate)
+* [Leaderboards](https://quizandsurveymaster.com/downloads/leaderboards/?utm_source=readme&utm_medium=plugin&utm_campaign=qsm_plugin&utm_content=leaderboads)
 
-= POWERFUL LIGHTBOX =
+**Premium Add-ons**
 
-You can display your media content in a responsive lightbox that comes with 15 slideshow effects (Premium version), supports social sharing (Premium version), full width view option, filmstrip (Premium version), image commenting (Premium version), lightbox autoplay and many more options that make your lightbox look awesome.
+* [Reporting & Analysis](https://quizandsurveymaster.com/downloads/results-analysis/?utm_source=readme&utm_medium=plugin&utm_content=reporting-analysis&utm_campaign=qsm_plugin)
+* [Export Results](https://quizandsurveymaster.com/downloads/export-results/?utm_source=readme&utm_medium=plugin&utm_content=export-results&utm_campaign=qsm_plugin)
+* [Logic](https://quizandsurveymaster.com/downloads/logic/?utm_source=readme&utm_medium=plugin&utm_content=logic&utm_campaign=qsm_plugin)
+* [User Dashboard](https://quizandsurveymaster.com/downloads/user-dashboard/?utm_source=readme&utm_medium=plugin&utm_content=user-dashboard&utm_campaign=qsm_plugin)
+* [URL Parameters](https://quizandsurveymaster.com/downloads/url-parameters/?utm_campaign=qsm_plugin&utm_medium=plugin&utm_source=readme&utm_content=url-parameters)
+* [Google Analytics Tracking](https://quizandsurveymaster.com/downloads/google-analytics-tracking/?utm_campaign=qsm_plugin&utm_medium=plugin&utm_source=readme)
+* [Landing Page](https://quizandsurveymaster.com/downloads/landing-page/?utm_source=readme&utm_medium=plugin&utm_content=landing-page&utm_campaign=qsm_plugin)
+* [MailChimp Integration](https://quizandsurveymaster.com/downloads/mailchimp-integration/?utm_source=readme&utm_medium=plugin&utm_content=mailchimp-integration&utm_campaign=qsm_plugin)
+* And **many** more available in our [Quiz And Survey Master Addon Store](https://quizandsurveymaster.com/addons/?utm_source=readme&utm_medium=plugin&utm_content=all-addons&utm_campaign=qsm_plugin)
 
-= AUDIO AND VIDEO SUPPORT =
+= Reachout to us =
 
-The Photo Gallery plugin allows you to include both videos and images within a single gallery. The WordPress Plugin supports YouTube, Vimeo, Instagram, Flickr or Dailymotion videos within Galleries. All you need to do is copy the URL of the video you want to include in the gallery plugin. It’s also possible to add audio tracks for the image slideshow.
+* You can contact our pro support via our [Contact Form](https://quizandsurveymaster.com/contact-support/) or use the WordPress form for free plugin support. We are equally active on both places.
+* Join our [official FB group](https://www.facebook.com/groups/516958552587745).
+* Quiz And Survey Master on [GitHub](https://github.com/QuizandSurveyMaster/quiz_master_next/)!
 
-= MULTIPLE WIDGETS =
+= More free plugins for your WordPress Site =
 
-There are four widgets in the gallery plugin: WordPress Standard Tag Cloud, Dynamic Tags Cloud (Premium version), Slideshow and Gallery widget. Use one of these widgets to display your albums on the sidebar areas of your website.
-
-= IMAGE WATERMARKING AND RIGHT CLICK PROTECTION =
-
-With watermarking feature of the Photo Gallery plugin you can add text or image watermarks on the photos in your galleries and albums, and protect them from illegal use. Right click protection will protect your images from unlawful distribution.
-
-= PRELOADED THEMES =
-
-The plugin comes with two default Themes. Premium version adds more themes which are fully customizable, giving you the option to add new themes with custom styling, colors, layout settings, and image navigation options.
-
-= SOCIAL SHARING =
-
-With Premium version you can allow users to share photos on Facebook, Twitter, Google+, Pinterest and Tumblr with social sharing buttons.
-
-= ADD-ONS =
-
-Photo Gallery comes with a number of add-ons that can help you sell digital images right from your website, display your Facebook albums, and import/export galleries and albums from one WordPress website to another.
-
-
-
-
-= SETTINGS/CUSTOMIZATION =
-*Some customizations described here are available in [Premium version](https://10web.io/plugins/wordpress-photo-gallery/)  . Please refer to feature summary for additional info.
-
-Photo Gallery allows you to create unlimited galleries and organize them into different photo albums providing detailed gallery descriptions and tags.The plugin supports both image and video content (Premium feature).
-Adding photos and videos to the galleries from the WordPress dashboard is simple and easy with its user-friendly admin panel. You’ll get all the tools you need to add and edit photos in the galleries.The file manager will help to rename, upload, remove, copy images and/or image directories with a few simple steps.  Under the options (settings) tab in admin panel you’ll find an extensive list of settings for galleries, thumbnails,watermarking,social accounts and slideshow that you can configure based on your needs. Plugin features a powerful lightbox that supports filmstrip and image carousel display. Also, you can enable image comments options and show the comments of the images right in the lightbox (Premium feature). There is a dedicated section for lightbox settings where you can choose to enable/disable AddThis display, image download option, image count,and other lightbox features.
-Under the social options tab you’ll find settings for the Instagram and Facebook galleries, where you can specify Instagram feed auto update interval (Premium feature). With the available user roles you can choose who can add/edit galleries, images, albums and tags (Premium feature).
-
-
-[Premium version adds](https://10web.io/plugins/wordpress-photo-gallery/)
-
-*   Masonry gallery View.
-*   Mosaic gallery View
-*   Blog Style View
-*   Masonry Album view
-*   Slideshow/Lightbox 15 effects
-*   Editable themes
-*   Instagram Integration
-*   Commenting possibility with Captcha protection
-*   Social sharing (Facebook, Google+, Twitter, Pinterest and Tumblr)
-*   Dynamic Tag Cloud widget with image tag cloud and text tag cloud options
-*   Possibility to include both videos and images within a single gallery
-*   Add ons support.
-*   Possibility of changing the roles of who can edit the galleries/albums/images (Author/All Users)
-
-= Photo Gallery Add-ons =
-[Google Photos Add-on](https://10web.io/plugins/wordpress-photo-gallery/) - Link and display your Google Photos albums in one click
-[Export/Import Add-on](https://10web.io/plugins/wordpress-photo-gallery/)  Export/import galleries, albums and all related data from one WordPress site to another.
-
-###IMPORTANT:
-If you think you found a bug in Photo Gallery or have any problem/question concerning the plugin, please check out [Support Forum](https://wordpress.org/support/plugin/photo-gallery) in our website.
-
+* 🎨 [Responsive Menu](https://wordpress.org/plugins/responsive-menu/) Highly customisable Responsive Menu Plugin for WordPress. No coding experience or knowledge is needed with an easy to use interface you can get it looking exactly as you want with minimal fuss.
+* 🔒 [Hide My WP](https://wordpress.org/plugins/hide-wp-login/) Makes it impossible for a hacker or an attacker to know the location of login url.
 
 == Installation ==
 
-#### Thank you for your interest in Instagram Photo Gallery.
-
-**Installing via WordPress**
-Follow the steps below to install WordPress Photo Gallery Plugin to your website.
-Log-in to your WordPress administrator panel.
-Select Plugins page from toolbar menu, click Add New.
-Search for Photo Gallery in the right-top search bar if you want to download the Free version or click Upload Plugin button > “Choose file” (“Browse”) and select the Photo Gallery zip file if you are installing the Professional version of Photo Gallery.
-
-For Mac Users
-Go to your Downloads folder and locate the folder with the Photo Gallery. Right-click on the folder and select Compress. This will create a .zip file which can be installed as described below:
-Click “Upload & Install” button.
-Click “Activate Plugin” button for activating the plugin.
-
-
-**Installing via FTP**
-
-Login to your hosting space via an FTP software, e.g. FileZilla.
-Unzip the downloaded Photo Gallery plugin folder without making any changes to the folder.
-Upload the Photo Gallery plugin into the following location wp-content>wp-plugins.
-Login to the WordPress Administrator Panel.
-Activate Photo Gallery by going to Plugins and pressing Activate button.
-
-
-If any problem occurs with installation of Photo Gallery, [please let us know](https://10web.io/contact-us/).
+* Navigate to Add New Plugin page within your WordPress
+* Search for Quiz And Survey Master
+* Click Install Now link on the plugin and follow the prompts
+* Activate the plugin through the 'Plugins' menu in WordPress
 
 == Frequently Asked Questions ==
 
-= 1. How can I add images to the Photo Gallery =
+= How do you use that feature? =
+We have extensive documentation and videos for the plugin. You can view the documentation here: [Documentation](https://quizandsurveymaster.com/docs). If you still need assistance, feel free to reach out to us!
 
-Adding images to photo gallery is pretty straight forward. On the left menu select Photo Gallery > Add Galleries/Images > Add new.
-The standard gallery is designed for including both regular images, as well as media from social networking websites, such as Flickr, Instagram and etc.
+= I want to edit the output for %QUESTIONS_ANSWERS%. Can I do that? =
 
+Yes, it is possible to edit the output of the variable %QUESTIONS_ANSWERS%. When editing your quiz, go to the “Text” tab. Once on the “Text” tab scroll almost all the way down the page and you will see a text area that allows you to edit the contents of %QUESTIONS_ANSWERS%.
 
-**Name.** Specify the name of the gallery.
-**Slug.** Specify the alias in your website for the gallery.
-**Type.** Choose the Mixed type.
-**Description.** Fill in the information you would like to share with the gallery. The description will be visible with some of the gallery views.
-**Author.** This indicates the author of the gallery. It automatically includes the name of the logged in user, who has added the gallery.
-**Published.** Choose whether to publish the gallery or to leave it for the further publication.
-**Preview image.** Indicate the image which will be used to preview the gallery. If you leave it blank, it will automatically pick the first uploaded images included in the gallery.
+= I want to remove the "Correct Answer" part of my results page, or I want to display the "Correct Answer Info" part on my results page. How can I do that? =
 
-You can add photos by clicking Add Images button.
-Photo Gallery plugin is using both standard WordPress Media Library, as well as a Photo Gallery File Manager. You can either click on Media Library button (in advance enabling it from General Options section of the Options menu) and select images to be imported into the Photo Gallery File Manager or click on Upload files and upload the desired images from another location. After uploading images you should mark them and press Add button.
+To make these changes, you will edit the %QUESTIONS_ANSWERS% variable. To do that, simply look at the answer to the previous question.
 
-Instead of uploading images you can embed images/videos from YouTube, Vimeo, Instagram, Flickr (only images) and Dailymotion.
-The following buttons do not work with the Embedded images-  Crop, Resize and Reset. In addition you cannot add Watermark over the Embedded imaged.
-Here are the standards for adding embedded videos/images:
-**Images**
-Instagram: http://instagram.com/p/ykvv0puS4u, if you want to add the image together with the post, you can add _post at the end of the URL.
-Flickr: https://www.flickr.com/photos/sui-fong/15250186998/in/gallery-flickr-72157648726328108/
-**Videos**
-YouTube: https://www.youtube.com/watch?v=fa4RLje-yM8
-Vimeo: http://vimeo.com/8110647
-Dailymotion: http://www.dailymotion.com/video/xexaq0_frank-sinatra-strangers-in-the-nigh_music
+= My preview looks different than my quiz. What can I do? =
 
-**Bulk Embed.** This option will allow adding more than one images from specific social media (currently only Instagram account, but more options will be added with the upcoming updates) into the standard gallery. You should keep in mind that the images will be added without the possibility of auto-update.
-**Instagram user.** Set the name of the Instagram user without additional symbols, e.g. jaredleto.
-**Number of recent instagram posts to add to gallery.** Specify the number of images you want to add from the stated Instagram account.
-**Instagram embed type.** Choose to use only the image content of the Instagram post or the entire post.
+This is usually a theme conflict. You can [checkout out our common conflict solutions](https://quizandsurveymaster.com/docs/advanced-topics/common-theme-conflict-fixes/) or feel free to contact us.
 
-= 2. I can't upload more images to galleries. Media uploader keeps loading. =
-The problem might be due to the large number of pictures in the main directory of Photo Gallery image uploader. If you already have heavy amount of uploaded images, please try to group them in separate folders.
+== Screenshots ==
 
-Take a note, that importing images with WordPress default Media Library can get into a conflict. You can try to disable that option and enable it only when you need to import images to Photo Gallery from there
-
-= 3. Is Photo Gallery responsive? =
-Photo Gallery plugin has fully responsive design and layout. It is designed to display all of its views nicely regardless of the device dimensions.
-
-= 4. What are the best dimensions to set for Photo Gallery Images? =
-We recommend to use images with the width of 1200px to 1600px. In order to speed up the load time of one's site, please use images with size of 500-700 KB or less in gallery.
-
-
-= 5. How do I Publish galleries on pages or posts? =
-Open the post/page you want to display the gallery. Press the button named Photo Gallery. A camera icon will be inserted into the page/post. Click on the image and select the gallery/album display you want to use for that specific page/post.
-Each shortcode uses three columns of parameters. The first column shows parameters specific for that view only, the second one shows Lightbox (except Slideshow view) parameters, the third one is referred to the Advertisement.
-
-In addition you can add the shortcode using Shortcode Generator.
-
-**Generating Shortcode**
-To use the created galleries and albums for the custom location, you can generate custom shortcodes of Photo Gallery and edit the created shortcodes.
-
-**Generate**
-Clicking this button you will be able to create a special shortcode based on your option choices. The created shortcode will appear in the box below. It can be copied/cut and pasted into a post/page.
-
-**Import**
-Pasting the shortcode in the box below and pressing the button, you will be able to edit and make changes in the shortcode. The final shortcode can be copied/cut and pasted into a post/page.
-
-= 6. How can I add or remove Social Sharing buttons from lightbox? =
-This feature is available in Premium version.There, if you want to add/remove Social Sharing button(s), go to Photo Gallery > Options > Lightbox and search for the following options:
-Enable Facebook button
-Enable Twitter button
-Enable Google+ button
-Enable Pinterest button
-Enable Tumblr button
-
-You can enable/disable whichever option you desire. This action gets applied to galleries, which will be published afterwards.
-
-If you need to remove the buttons from published galleries, open containing pages/posts from admin, edit gallery shortcodes and specify the same options described above.
-
-= 7. How can I generating Shortcode for Photo Gallery Plugin? =
-To use the created galleries and albums for the custom location, you can generate custom shortcodes of Photo Gallery and edit the created shortcodes.
-**Generate.** Clicking this button you will be able to create a special shortcode based on your option choices. The created shortcode will appear in the box below. It can be copied/cut and pasted into a post/page.
-**Import.** Pasting the shortcode in the box below and pressing the button, you will be able to edit and make changes in the shortcode. The final shortcode can be copied/cut and pasted into a post/page.
-
-= 8. Is it possible to add links to other pages in thumbnails instead of opening larger images in lightbox? =
-For this case you shall go to Photo Gallery > Options > Thumbnail options and set Thumbnail click action option to Redirect to URL.
-Afterwards open your gallery you want to add a URL and define the necessary links in Redirect to URL field, which should be under the title input.
-Lastly, when you insert your gallery into a page or post, make sure Thumb click action option is set to Redirect to URL in shortcode toolbox as well.
-
-
-= 9. Media uploader keeps loading.  Why can't I upload more images to galleries. =
-The problem might be due to the large number of photos in the main directory of Photo Gallery image uploader. If you already have large amount of uploaded images, please try to group them in separate folders.
-Please note, that importing images with WordPress default Media Library can get into a conflict. You can try to disable that option and enable it only when you need to import images to Photo Gallery from there.
-
-
-= 10. How can I publish the gallery widgets? =
-To publish gallery plugin widgets, go to Appearance > Widgets. Here select the widget option you want to add to a custom location. Afterwards drag and drop the selected widget into the custom location, fill in the options and press Save button.
-
-**WordPress Standard Tags Cloud (Premium Version)**
-
-**Tag Cloud.** This widget is included as a hosted widget for the WordPress standard Tag Cloud. It will display the tags added to the albums and images of Photo Gallery. After the click, the images using the tags will be displayed in Thumbnails view.
-**Title.** Provide a title for the tag cloud.
-**Taxonomy.** Select Photo Gallery from the provided options.
-
-**Photo Gallery Tags Cloud (Premium Version)**
-
-**Photo Gallery Tags Cloud.** This dynamic widget allows having rotating tags or images. After clicking on the tag a separate page will be opened displaying images corresponding to the tag. In case of images, the images will display with a pop-up.
-**Title.** Provide a title for the dynamic tag cloud.
-
-**Choosing Text type**
-*   Open in. Set the tags to open up either in separate page or lightbox view.
-*   Number. Provide the number of tags you want to display. If you leave it to 0 all tags will be displayed.
-*   Dimensions. Specify the width and height for the dynamic tag cloud.
-*   Transparent background. Choose whether to have a transparent background or not.
-*   Background color. Choose the background color for the tag cloud.
-*   Text color. Choose the tag text color
-*   Theme. Choose the theme, which will be applied to the gallery/album corresponding to the tag.
-
-**Choosing Image type**
-**Show tag names.** Choose whether to display tag names or not.
-**Open in.** Set the tags to open up either in separate page or lightbox view.
-**Number.** Provide the number of images you want to display. If you leave it to 0 all images will be displayed.
-**Dimensions.** Specify the width and height for the dynamic image cloud.
-**Background color.** Choose the background color for the image cloud.
-**Text color.** Choose the tag text color.
-**Theme.** Choose the theme, which will be applied to the gallery/album corresponding to the image/tag.
-
-**Photo Gallery Slideshow (Premium Version)**
-
-**Title.** Provide a title for the slideshow.
-**Select Gallery.** Specify the gallery you want to use for the slideshow.
-**Filmstrip height.** Define the filmstrip height in pixels.
-**Slideshow effect.** Select the effect to apply to the slideshow.
-**Time interval.** Define the time interval between the images in seconds.
-**Enable shuffle.** Choose whether to have shuffle for the slideshow images or not.
-**Theme.** Choose the theme to be applied to the gallery slideshow.
-
-**Photo Gallery Widget**
-
-You can add album and gallery images into a custom location. After click the users will be redirected into compact album view, if it is an album. If it is a gallery included in the album it will open up in Thumbnails view. The images will be displayed in a lightbox.
-**Title.** Provide a title for the widget. Choose whether to display an album or gallery.
-**Select Gallery/Select Album.** Select the gallery/album to be displayed with the widget
-Choose whether to display random or the first/last specific number of images.
-**Number.** Provide the number of images to be displayed with the widget.
-**Dimensions.** Specify the width and height of the widget.
-**Theme.** Choose the theme, which will be applied to the gallery/album.
+1. Dashboard
+2. Create New Quiz Or Survey
+3. Adding Questions / Answers
+4. Questions
+5. All Quizzes & Surveys
+6. Contact Field
+7. Style Tab
+8. Featured Image
+9. Frontend View with Answer
+10. Answer
+11. Stats
+12. Reporting and analysis result
+13. Customizing Themes
+14. QSM Breeze Theme
+15. QSM Fragrance Theme
+16. QSM Ivory Theme
+17. QSM Pool Theme
+18. Database
 
 == Changelog ==
 
-= 1.5.86 =
-* Fixed: Scroll Load functionality in Filemanager.
-* Fixed: Image title on Mosaic view.
-* Fixed: Negative numbers for ordering.
-* Fixed: Image tittle on hover for multiple galleries.
-* Fixed: Zoom functionality compatibility with some themes.
-
-= 1.5.85 =
-* Improved: Images sizes for Masonry view with few images.
-* Fixed: Bug on image upload in some cases.
-* Fixed: Preview for Masonry gallery group.
-* Fixed: Back button for Extended gallery group.
-* Fixed: Thumbnail dimensions should be the same after upload and reset.
-* Fixed: Image title and Gallery title/description font changing issue for Carousel view.
-
-= 1.5.84 =
-* Fixed: PHP warning on Extended view.
-* Fixed: Issue on generated shortcode page.
-* Fixed: Issue on closing shortcode popup.
-* Fixed: Instagram post sizes.
-* Fixed: Captcha in comments section.
-
-= 1.5.83 =
-* Improved: Updated external JS libs.
-* Fixed: Shortcode popup on WP5.8.
-* Fixed: Keep ordering of images the same when adding images to the gallery.
-* Fixed: Html in extended gallery group description.
-* Fixed: Thumbnail sizes after reset.
-* Fixed: Masonry layout with SVG images.
-* Fixed: Lightbox error when tag was chosen.
-
-= 1.5.82 =
-* Fixed: Instagram image thumbnails after publishing in edit mode.
-* Fixed: Zoom functional.
-* Fixed: Lightbox with active Select Tag.
-* Fixed: Image upload in some cases.
-* Fixed: Uploading multiple images.
-* Fixed: Tag filter with no results.
-* Fixed: Preview popup for rtl.
-* Fixed: Deleting image without update.
-* Fixed: Embed media hover.
-* Fixed: Images sharing.
-* Fixed: Empty shortcode options for custom post type.
-* Fixed: Gallery/Group list column headers alignment.
-
-= 1.5.81 =
-* Improved: DB queries on opening lightbox.
-* Improved: Updated external js libraries.
-* Improved: Escaped all data printed in gallery views.
-* Fixed: Disable "Add selected images to gallery" button after adding images.
-* Fixed: Missing "Back" button in Gallery groups with disabled dynamic URLs for galleries and gallery groups.
-* Fixed: Masonry distance issue with video items.
-* Fixed: Restrict Gallery download from URL.
-* Fixed: Bulk actions after search by alt/desc.
-
-= 1.5.80 =
-* Fixed: Shortcode popup on WP5.8.
-
-= 1.5.79 =
-* Fixed: Security issues with SVG files in folder.
-* Fixed: Set text watermark.
-* Fixed: Double loading in Gallery Group and Blog style views.
-* Fixed: Play button on Vimeo videos.
-* Fixed: Notices on import from media library.
-
-= 1.5.78 =
-* Fixed: Sanitize files data.
-
-= 1.5.77 =
-* Added: Select gallery/gallery group type on preview.
-* Fixed: XSS vulnerability.
-* Fixed: Lightbox close button on mobile.
-* Fixed: Gallery group preview image stretched.
-* Fixed: Adding image with dot in tag name.
-* Fixed: Warnings in filemanager.
-* Fixed: Image table header style on editing gallery.
-* Fixed: Bulk rotate.
-* Fixed: Create thumbnail for svg images.
-
-= 1.5.76 =
-* Improved: Lightbox load time.
-* Improved: Use "a" tag in image description.
-* Fixed: XSS vulnerability.
-* Fixed: Gallery Group styles on loading.
-* Fixed: Shortcode page style on mobile.
-* Fixed: Masonry view in some cases.
-* Fixed: "Show image counter" option with default settings.
-* Fixed: Filemanager size on opening.
-* Fixed: Delete image functionality.
-* Fixed: Delete gallery description functionality.
-* Fixed: Deleting images after search.
-
-= 1.5.75 =
-* Fixed: Security issues with SVG files.
-
-= 1.5.74 =
-* Fixed: XSS vulnerability.
-
-= 1.5.73 =
-* Fixed: Conflicts with some themes which added width/height attributes to img tags.
-* Fixed: Tags filter dropdown.
-* Fixed: New lines in image description on thumbnail view.
-* Fixed: Styles of pagination with top position.
-* Fixed: JS error after closing lightbox fullscreen.
-* Fixed: Importing newly added images from media library.
-* Fixed: Remove pagination from Add tags popup.
-* Fixed: Show image counter with disabled control buttons.
-* Fixed: HTML in gallery/gallery group description.
-
-= 1.5.72 =
-* Fixed: Random flash when changing photos.
-* Fixed: Images ordering when there are more than 50 image on a page.
-* Fixed: Image role restrictions for folders.
-* Fixed: Filemanager on screen with width 1920px.
-* Fixed: Styles in Add tags popup.
-* Fixed: AddThis functional.
-* Fixed: Gallery group title/description with quote in it.
-* Fixed: Select box is missing in case of there are no tags and tag box is shown.
-
-= 1.5.71 =
-* Added: New design for tag filters.
-* Added: Possibility to enter page number to jump to the specific page.
-* Fixed: Show gallery in tabs with changing visibility.
-* Fixed: Gallery in advanced tabs widget of Essential Addons for Elementor plugin.
-* Fixed: Horizontal mosaic view on mobile.
-* Fixed: Compatibility with PHP 8.
-* Fixed: Compatibility with WP 5.7.
-* Fixed: Removing +, ^ symbols from image filename on upload.
-* Fixed: Slideshow, Carousel autoplay when changing between browser tabs.
-* Fixed: Play/pause button size for Carousel view on mobile.
-
-= 1.5.70 =
-* Added: Zoom in/out for images in lightbox.
-* Changed: Reset only the current tag options on themes reset.
-* Changed: Make items clickable on editing Gallery groups.
-* Fixed: Removed hash after closing lightbox.
-* Fixed: Video causes a JS error while trying to close full screen in Slideshow view.
-* Fixed: Uploader issue in some cases.
-* Fixed: Scrolling down in options page.
-* Fixed: Date and Title filters as a default.
-* Fixed: Blog Style view alignment.
-* Fixed: Importing Gallery groups.
-* Fixed: Disable Elementor lightbox for gallery images.
-* Fixed: Preview in Elementor.
-* Fixed: Spacing between images in masonry view.
-* Fixed: Images description in gallery groups.
-
-= 1.5.69 =
-* Added: Possibility to set Embed YouTube video starting time and to show related videos from your channel.
-* Fixed: XSS vulnerability.
-* Fixed: Scroll bar styles in comments.
-* Fixed: Thumbnails alignment in uploader.
-* Fixed: Remove I button to show image title/description for image with empty title/description in lightbox.
-* Fixed: Update preview images after the gallery content has been removed.
-* Fixed: Message after deleting images with bulk action.
-
-= 1.5.68 =
-* Added: Possibility to allow users with none administrator role to edit themes, tags, options.
-* Fixed: XSS vulnerability.
-* Fixed: Ordering functionality for admin.
-* Fixed: Autoplay during blur/focus tabs.
-* Fixed: Export functionality on Mozilla.
-* Fixed: Image role restrictions.
-* Fixed: Slideshow autoplay in the multiple tabs.
-
-= 1.5.67 =
-* Fixed: Style issues with WP5.6.
-* Fixed: Duplicate of Gallery groups with Select all button.
-* Fixed: Do not allow double quotes in image name.
-* Fixed: Double quotes in gallery name.
-* Fixed: Do not duplicate image on importing from media library.
-* Fixed: Issue with jQuery mobile library.
-* Fixed: Editing shortcode in WP Classic editor.
-
-= 1.5.66 =
-* Changed: js ready function call logic.
-
-= 1.5.65 =
-* Changed: Adding shortcode design.
-* Fixed: Share with Twitter.
-* Fixed: Instagram oEmbed functionality.
-* Fixed: Smaller area for play/pause button on mobile.
-* Fixed: Image bulk actions for galleries with large amount of images.
-
-= 1.5.64 =
-* Fixed: Instagram functionality.
-* Fixed: Images multiline description.
-* Fixed: Minor bugs.
-
-= 1.5.63 =
-* Added: Option to disable get parameter for image URL to allow caching images in CDN.
-* Added: Option to enable/disable GDPR compliance.
-* Fixed: Conflict of blank thumbnails with some themes.
-* Fixed: Watermark opacity.
-* Fixed: Lightbox in Carousel view.
-* Fixed: Quotes in image title.
-* Fixed: Instagram functionality.
-
-= 1.5.62 =
-* Fixed: Minor bug.
-
-= 1.5.61 =
-* Fixed: Conflicts with WP5.5.
-* Fixed: Conflicts with PHP7.4.
-* Fixed: Bug on lightbox fading effect.
-
-= 1.5.60 =
-* Fixed: JS Injection vulnerability.
-
-= 1.5.59 =
-* Added: Thumbnail background color transparency option.
-* Updated: Google fonts list.
-* Fixed: Bug on thumbnails alignment.
-* Fixed: Bug on thumbnail sizes during lazy load.
-* Fixed: Issues with folders and files with space in name.
-
-= 1.5.58 =
-* Improved: Admin pages UX/UI.
-
-= 1.5.56 =
-* Fixed: Security issue.
-
-= 1.5.55 =
-* Fixed: Security issue.
-* Fixed: Minor bug.
-
-= 1.5.54 =
-* Fixed: Memory leak for users with non default uploads directory.
-
-= 1.5.53 =
-* Added: Functionality to duplicate galleries.
-* Added: Possibility to add Gallery title/description to carousel view.
-* Improved: Search UX on options page.
-* Improved: Allow br, ul, li tags in image alt, description and gallery, gallery group description.
-* Fixed: Compatibility for websites hosted on wordpress.com.
-* Fixed: Export/import.
-* Fixed: Google fonts saving.
-* Fixed: Conflict with PHP5.5.
-* Fixed: Text Navigation alignment for Image Browser view.
-* Fixed: Tag filter bug with enabled dynamic URLs.
-* Fixed: Random ordering with enabled dynamic URLs.
-* Fixed: Conflict with Twenty twenty theme.
-* Fixed: Gallery group back for galleries opened with link.
-* Fixed: Link in image description for Blog style view.
-* Fixed: Load more for Masonry view.
-* Fixed: Carousel resize.
-* Fixed: Crop functionality.
-
-= 1.5.52 =
-* Fixed: Minor bug fixed.
-
-= 1.5.51 =
-* Removed: Dismissable notification about new offer by 10Web.
-
-= 1.5.50 =
-* Added: Dismissable notification about new offer by 10Web.
-
-= 1.5.49 =
-* Fixed: Navigation issue in lightbox for images with spaces in name.
-* Fixed: Bug on ordering images by date.
-* Fixed: Pinterest share.
-
-= 1.5.48 =
-* Fixed: Minor issue.
-
-= 1.5.47 =
-* Fixed: Inserting gallery with PHP code.
-
-= 1.5.46 =
-* Fixed: Security issue. (This vulnerability was discovered by Vishnupriya Ilango of Fortinet's FortiGuard Labs.)
-
-= 1.5.45 =
-* Fixed: Slideshow and carousel view description.
-
-= 1.5.44 =
-* Fixed: Opening lightbox.
-
-= 1.5.43 =
-* Fixed: Elementor widget.
-
-= 1.5.42 =
-* Added: Shortcode options to Elementor widget.
-* Added: Possibility to add image description to thumbnail view.
-* Added: Possibility to upload svg files.
-* Fixed: Masonry layout with Lazy load.
-* Fixed: Title styles for masonry.
-* Fixed: Gallery group load with enabled dynamic URLs.
-* Fixed: Notice on lightbox opening from widget.
-* Fixed: Image thumbnails dimensions for Google photos.
-* Fixed: XML Sitemap for Gallery Groups.
-
-= 1.5.41 =
-* Fixed: Minor bug.
-
-= 1.5.40 =
-* Fixed: Opening lightbox from widget.
-
-= 1.5.39 =
-* Fixed: Control buttons container height.
-* Fixed: Allow to write url as advertisement text.
-* Fixed: Conflict with Bootstrap classes.
-* Fixed: Scroll load with "Enable dynamic URLs for galleries and gallery groups" is on.
-* Fixed: Pagination with disabled "Enable href attribute" and "Enable dynamic URLs for galleries and gallery groups" options set to Yes.
-* Fixed: Hit counter.
-* Fixed: Bulk deleting galleries/gallery groups.
-* Fixed: Sharing with 'Enable dynamic URLs for galleries and gallery groups' is on.
-* Fixed: Lazy load with disabled 'Enable dynamic URLs for galleries and gallery groups'.
-* Fixed: Masonry view with 'Resizable thumbnails' set to No.
-* Fixed: Load with galleries in tab.
-* Fixed: Bug on masonry view with image title "Show on hover" option on.
-
-= 1.5.38 =
-* Fixed: Bug breaking Sitemaps with Gallery Group shortcodes.
-
-= 1.5.37 =
-* Fixed: View count.
-* Fixed: Galleries/gallery groups bulk deleting.
-
-= 1.5.36 =
-* Added: Ask a question button.
-* Fixed: Issue with lightbox opening.
-
-= 1.5.35 =
-* Added: Gallery, Gallery group, Tag edit links in widget for Elementor.
-* Improved: Add gallery images to the XML generated with Yoast or Seo by 10Web.
-* Updated: jQuery File Upload framework.
-* Fixed: Shortcode buttons behaviour in Text widget of Divi Builder.
-* Fixed: Vulnerabilities.
-* Fixed: Opening shared URLs.
-* Fixed: Click action on image title click.
-* Fixed: Filmstrip arrows alignment.
-* Fixed: Masonry layout after closing lightbox.
-* Fixed: Do not reset shortcode options on 'Use default options' enable/disable.
-* Fixed: Titles on masonry view.
-* Fixed: Images ordering in lightbox.
-* Fixed: Don't delete tags on deleting all images.
-* Removed: Webinar banner.
-
-= 1.5.34 =
-* Added: Webinar banner.
-* Fixed: More than one mosaic gallery on a page.
-
-= 1.5.33 =
-* Fixed: Error from Instagram after connecting a Personal account.
-
-= 1.5.32 =
-* Added: Possibility to bulk remove tags.
-* Added: Possibility to use AND operator for tag filtering.
-* Added: 'How to insert a shortcode in Gutenberg?' to 'How to use'.
-* Fixed: Minor bug on file upload and import from media library.
-* Fixed: Link in gallery group description.
-* Fixed: Removing link from images alt.
-* Fixed: Order by date in filemanager for folders.
-* Fixed: Scroll load and load more loading should not cover all gallery.
-* Fixed: Instagram sign in.
-* Improved: Automatically select image after upload.
-* Improved: Automatically deactivate gallery after uninstalling.
-* Improved: Auto rotate images depend on image orientation saved in metadata.
-* Improved: Short url for lightbox.
-
-= 1.5.31 =
-* Fixed: Vulnerability problem reported by 'Tin Duong of Fortinet's FortiGuard Labs'.
-
-= 1.5.30 =
-* Removed: Banner to check website performance.
-
-= 1.5.29 =
-* Added: Functionality to disable ajax actions to open galleries by URL.
-* Fixed: Notice on adding Instagram whole post.
-* Fixed: Pagination styles on admin pages.
-* Fixed: Zip upload.
-* Fixed: Filmstrip scroll in fullscreen mode.
-* Fixed: Message on saving global options.
-
-= 1.5.28 =
-* Changed: Banner text.
-
-= 1.5.27 =
-* Added: Banner to check website performance.
-
-= 1.5.26 =
-* Fixed: Embed issue.
-* Fixed: Issue with uploading multiple images at once.
-
-= 1.5.25 =
-* Fixed: Security issue.
-
-= 1.5.24 =
-* Fixed: Major bug.
-
-= 1.5.23 =
-* Fixed: Authenticated stored XSS.
-* Fixed: Google fonts with 'Developer mode' set to 'No'.
-* Fixed: Add images to gallery with exclamation mark in tag name.
-* Fixed: Galleries list page with big data.
-* Fixed: Filter in comments page.
-* Fixed: Random ordering for lightbox.
-* Fixed: Carousel view.
-* Fixed: Scroll bar for image info.
-* Fixed: Do not allow to save <a> tag in image alt.
-* Fixed: Do not allow backslash in image alt and description.
-* Fixed: HTML in alt/description.
-* Changed: Polish translation.
-* Added: Integration with Google photos.
-* Added: Lazy load(optional).
-* Removed: Google+.
-
-= 1.5.22 =
-* Changed: Banner to install image optimizer plugin.
-
-= 1.5.21 =
-* Added: Ebook delivery confirmation and instructions popup.
-* Fixed: Screen options.
-
-= 1.5.20 =
-* Added: "Get Free Ebook" page on activation.
-* Updated: jQuery upload library.
-
-= 1.5.19 =
-* Added: Possibility to open gallery in any view from gallery group.
-* Added: Search functionality for gallery group views.
-* Added: Separate ordering option for gallery groups.
-* Fixed: Stars, Hit counter position with opened control buttons.
-* Fixed: Gallery edit page responsiveness.
-* Fixed: File extension as folder name.
-* Fixed: Add images to gallery selected with shortcode CTRL+A.
-* Fixed: HTML in image title.
-* Fixed: Error when clicking allow or skip more than once.
-* Fixed: Enable/Disable Lightbox Filmstrip.
-* Fixed: Enable/Disable Lightbox Right Click protection.
-* Fixed: Enable/Disable Lightbox Autoplay.
-* Fixed: Crop thumbnail popup dimensions.
-* Fixed: Rating icon in control buttons.
-* Fixed: Order by date.
-* Fixed: Shortcode popup height opened from gutenberg.
-* Fixed: Lightbox filmstrip thumbnails dimensions.
-* Improved: Filmstrip.
-
-= 1.5.18 =
-* Changed: Banner to install 10Web manager.
-
-= 1.5.17 =
-* Fixed: Shortcode popup opened from Gutenberg.
-
-= 1.5.16 =
-* Fixed: Shortcode popup opened from Gutenberg.
-* Fixed: Images upload with empty meta data.
-
-= 1.5.15 =
-* Fixed: Photo gallery icon doesn't appear in Gutenberg.
-* Fixed: Filemanager on iPhone.
-* Fixed: Controls toggle button position in lightbox on mobile.
-* Fixed: Tag box in iPhone X.
-* Fixed: Hover effect types for galleries in gallery groups.
-* Fixed: Stop custom post types from appearing in search engines.
-* Fixed: Instagram photos in lightbox.
-* Fixed: First image alignment in slideshow view with Sixteen theme.
-* Fixed: Theme reset functionality.
-* Fixed: Bug on uploading images with special characters in metadata.
-* Fixed: Error when clicking allow or skip to collect some usage data more then once.
-* Fixed: Pagination doesn't work in 'Add gallery/gallery group' popup.
-* Improved: Removed Font Awesome.
-* Improved: Minify js, css.
-* Changed: Separate editing alt, description, redirect url actions.
-
-= 1.5.14 =
-* Changed: 10WEB Manager plugin banner.
-
-= 1.5.13 =
-* Fixed: Bug on Gutenberg block functionality.
-* Changed: PHP function shortcode check if function exists.
-
-= 1.5.12 =
-* Added: Number of columns option for Extended Gallery Group view.
-* Added: Title/description vertical alignment option for Extended Gallery Group view.
-* Added: Backend notification if php-xml library is not installed.
-* Changed: Extended Gallery Group view theme default values.
-* Changed: Bulk-editing image info.
-* Improved: Extended Gallery Group view responsiveness.
-* Improved: Decreased load time in Image uploader and working with a large number of images.
-* Fixed: Bug on inserting media from Youtube.
-* Fixed: Crop popup dimensions for a newly added image.
-* Fixed: Image uploader popup dimensions in Bridge theme.
-* Fixed: Gutenberg block edit functionality.
-* Fixed: JS before doctype on Gutenberg edit page.
-* Added: Free plugin flow: When installing Manager, store plugin name or slug in a WP option.
-
-= 1.5.11 =
-* Fixed: Upload image when there is a quote in the image metadata.
-* Fixed: Bug on slideshow autoplay.
-* Fixed: Bug when you put a Gallery Group after a Gallery with scroll load.
-* Fixed: Conflict with "BigSlam" theme.
-* Fixed: Conflict with some ajax themes.
-* Fixed: PNG and GIF crop.
-* Fixed: JS error in Elementor editor page.
-
-= 1.5.10 =
-* Fixed: Closing notification.
-
-= 1.5.9 =
-* Changed: Pages of Notification to install 10WEB Manager plugin.
-
-= 1.5.8 =
-* Added: Notification to install 10WEB Manager plugin.
-
-= 1.5.7 =
-* Fixed: Link in gallery/gallery group description.
-* Fixed: Compatibility with Elementor tabs.
-* Fixed: Compatibility with ajax load.
-* Fixed: Sorting images on gallery edit page before saving gallery.
-* Added: Disable Google fonts.
-* Added: Get title from image metadata.
-
-= 1.5.6 =
-* Fixed: Page scroll doesn't work after closing the lightbox on Edge browser.
-* Fixed: Ampersand in images keyword.
-* Fixed: Multiple galleries in one page in Elementor preview.
-* Fixed: Save image added date to gallery as image date instead of last modified date.
-* Fixed: If you click on the small icon from the WooCommerce product editor to insert shortcode, it shows popup header twice.
-* Fixed: Remove download button for embedded images.
-* Added: Add multiple images to gallery on mobile.
-* Added: Comments pagination under the table.
-* Added: Date column in comments.
-
-= 1.5.5 =
-* Added: How to use button to galleries and gallery groups pages.
-* Added: Use uploaded image meta tags.
-* Fixed: Images list toggle button does not work after page update.
-* Fixed: Bring back "drag and drop" and description columns on small screens.
-* Fixed: Slideshow view > Disable autoplay doesn't work when Control buttons are disabled and you navigate slide from the filmstrip.
-* Fixed: Bug with Sticky Nav from Max Mega Menu.
-* Fixed: Rendering in Elementor builder.
-* Fixed: Multiple Galleries of the same view in Elementor preview.
-* Fixed: On Divi, the titles on hover are left aligned.
-* Fixed: Bulk reset with a large amount of images.
-* Fixed: Preload for carousel.
-* Fixed: Old shordcodes convert to Gutenberg.
-* Fixed: Disable Jetpack photon module for embed thumbnails.
-* Fixed: Filters are before the gallery title, after performing a filter they are under the gallery description.
-* Fixed: Youtube embeded video is shown twice in slideshow widget if an effect is selected.
-
-= 1.5.4 =
-* Changed: Logic of including google fonts.
-
-= 1.5.3 =
-* Fixed: Gallery widget with all images.
-
-= 1.5.2 =
-* Fixed: Changed gallery index number on ID.
-* Fixed: Conflict with lazy load.
-* Fixed: Slideshow view.
-
-= 1.5.1 =
-* Fixed: Minor bug
-
-= 1.5.0 =
-* Added: "Resizable thumbnails" option for all views.
-* Added: "Distance from container frame" option for all views.
-* Added: "Zoom" hover effect for all views.
-* Added: "Title font color (Show on hover)" option for all views.
-* Added: "Show title on hover / Always show" option for masonry view.
-* Added: Option to search images by Filename, Alt/Title, the description in the admin section.
-* Added: Filters for image browser view.
-* Added: Always show "Redirect URL" column on the gallery edit in the images table.
-* Added: Ordering for galleries in a gallery group with all galleries list.
-* Added: "Right-click protection" option on Image browser view.
-* Improved: Image crop functionality.
-* Improved: Move inline JS from all views to prevent conflict with some themes.
-* Improved: Remove static CSS from carousel view to improve load time.
-* Improved: Logic behind frontend AJAX calls to improve performance.
-* Improved: Use the largest image file instead of the original image when the original file doesn't exist to prevent errors.
-* Improved: Gallery edit page load time.
-* Improved: Disabled the cron functionality in the free version.
-* Improved: Masonry view HTML / CSS / JS structure.
-* Improved: Mosaic view HTML / CSS / JS structure.
-* Improved: Albums "Back" button styles.
-* Improved: Filemanager load time.
-* Improved: Do not add hashtag ids to browser history.
-* Changed: Pause autoplay when the user is writing a comment.
-* Changed: Apply Tag filter to image bulk-download.
-* Changed: Keep active tab in the themes section after updating the settings.
-* Changed: Removed Horizontal Masonry view.
-* Fixed: Bug on inserting Photo Gallery shortcode via Text mode of the Editor.
-* Fixed: Stretched thumbnails bug when Jetpack is enabled.
-* Fixed: Crop with "Keep aspect ratio" Off.
-* Fixed: WordFence warnings.
-* Fixed: When opening a rated image, show a message that image is already rated.
-* Fixed: Title and description in slideshow view appear only on the first image when the Scale-Out effect is selected.
-* Fixed: Skipping some images when bulk-uploading images on a slow connection and PHP 7.1.
-* Fixed: Infinite loading when you click on insert shortcode before the page is fully loaded.
-* Fixed: Instagram gallery auto-update.
-* Fixed: Bug with double quotes in Photo Gallery Widget title.
-* Fixed: Bug on "Select all" in the Comments section when the comments are filtered.
-* Fixed: Include Google Fonts only when needed.
-* Fixed: Widgets preview in Elementor builder.
-* Fixed: The first image is on the left in Slideshow view.
-* Fixed: Conflict with "WP 1 Slider" plugin.
-* Fixed: Bug on Comments moderation option.
-* Fixed: Gallery duplication after Resetting the images with a large number of images.
-
-= 1.4.17 =
-* Fixed: Bug on widgets added with SiteOrigin builder old versions
-
-= 1.4.16 =
-* Fixed: Disable cron functionality in free version.
-* Fixed: Title/description container visibility in lightbox.
-
-= 1.4.15 =
-* Fixed: Titles in mosaic view after load more.
-* Fixed: JS error on slideshow view.
-* Fixed: Slideshow on IE11.
-* Fixed: Captcha dose not appear after submit.
-
-= 1.4.14 =
-* Fixed: Conflict with IE 11 version.
-* Fixed: Lightbox autoplay.
-
-= 1.4.13 =
-* Added: Download button functionality related to the filters.
-* Added: Gutenberg integration.
-* Added: Recreate thumbnails, set and reset watermark functions actions by Ajax ( part to part by limit 50 ) in options.
-* Added: Images sorting functionality in gallery edit page.
-* Changed: Moved Slideshow view inline javascript to js file.
-* Changed: Remove static css from Slideshow view.
-* Changed: Check GD2 library availability.
-* Changed: Thumbnail titles styles in thumbnail view.
-* Changed: Design of filters in thumbnail view.
-* Improved: Open lightbox faster.
-* Improved: How to use.
-* Fixed: Add shortcode functionality on Beaver, Elementor, SiteOrigin and Visual Composer builders.
-* Fixed: Bug on setting watermark.
-* Fixed: Conflict with "Fast Velocity Minify".
-* Fixed: Filmstrip image ordering
-* Fixed: Bug on searched images delete in admin.
-* Fixed: Conflict Wordpress.com hosting.
-* Fixed: Search logic when the image title contains several words and when you add space before searched word.
-* Fixed: Bug on scroll load.
-* Fixed: Add items to gallery group in IE.
-* Fixed: Slideshow widget bug.
-* Fixed: Importing to many images from Media library.
-
-
-= 1.4.12 =
-* Added: GDPR compliance.
-
-= 1.4.11 =
-* Fixed: Bug on displaying embed media.
-* Fixed: Bug on opening lightbox with embed media.
-
-= 1.4.10 =
-* Fixed: Removed Bom from Galleries.php.
-* Changed: Separate buttons for deactivation.
-
-= 1.4.9 =
-* Changed: Links to 10web.io.
-* Fixed: Bug on slideshow widget.
-* Fixed: Conflict with minifying plugins.
-
-= 1.4.8 =
-* Fixed: Pagination type "scroll load" functionality.
-* Fixed: Album back to previous functionality.
-* Changed: Remove overview page.
-* Fixed: Delete temporary zip file after images bulk download.
-* Fixed: Facebook Images do not resize after lightbox resize.
-* Added: Gutenberg integration.
-
-= 1.4.7 =
-* Fixed: Gallery save in some cases.
-* Fixed: Thumbnails count in thumbnail view.
-* Fixed: Thumbnails alignment in thumbnail view.
-* Fixed: Conflict with some themes.
-
-
-= 1.4.6 =
-* Fixed: "The loopback request to your site failed" error.
-* Fixed: Import large amount of images from media library.
-* Fixed: Album random effect from widget.
-* Fixed: Preload images bug, when count is 0.
-* Fixed: Fixed: Load more and scroll load doesn't work for images in extended album view (masonry view of images).
-* Fixed: Show gallery description functionality for Gallery groups.
-* Fixed: Warnings on PHP 7.1.
-* Fixed: Total width of mosaic gallery.
-* Fixed: Gallery title/description in gallery views.
-* Fixed: Add tag to image.
-* Fixed: Watermark image broken thumbnail shows on Carousel view.
-* Fixed: Keep selected theme tab.
-* Fixed: Filmstrip width on Mac.
-* Added: All Galleries option in Gallery group when adding a shortcode.
-* Added: Loading for admin pages.
-* Added: Zoom effect for thumbnail view.
-* Added: Resizable functionality for thumbnails.
-* Added: Distance from container frame option.
-* Changed: Removed hover effect from mobile devices.
-* Improved: Distance between thumbnails in standard thumbnail view.
-* Improved: Spanish translation (thanks to Pedro Javier Fernandez Ruiz).
-* Improved: Greek translation (thanks to John Fy).
-
-= 1.4.5 =
-* Fixed: Shortcode save in some cases.
-* Fixed: Shortcode popup with some page builders.
-
-= 1.4.4 =
-* Fixed: Compatibility with Instagram updated API.
-
-= 1.4.3 =
-* Fixed: Embed type galleries.
-* Fixed: Minor bug with PHP v5.3.
-
-= 1.4.2 =
-* Fixed: Unicode filenames.
-* Fixed: Deleting all images from gallery.
-
-= 1.4.1 =
-* Fixed: Bugs on php5.3.
-
-= 1.4.0 =
-* Improved: User interface admin pages.
-* Changed: Thumbnail view and lightbox default styles.
-* Improved: Filemanager.
-* Fixed: Big thumbnail responsiveness.
-
-= 1.3.69 =
-* Changed: Default options and theme.
-
-= 1.3.68 =
-* Fixed: Import from media library for large amount images.
-
-= 1.3.67 =
-* Fixed: Security issue
-
-= 1.3.66 =
-* Fixed: Minor bugs on widgets.
-* Updated: WD Library.
-* Fixed: Widget default parameters bug.
-
-= 1.3.65 =
-* Fixed: Widgets pagination bug.
-
-= 1.3.64 =
-* Fixed: Minor Bugs
-
-= 1.3.63 =
-* Fixed: Minor Bugs
-
-= 1.3.62 =
-* Fixed: Options variable problem.
-* Fixed: Vulnerable GET variable.
-
-= 1.3.61 =
-* Added: Support forum and Review links.
-
-= 1.3.60 =
-* Added: Integration with image optimizer plugin.
-
-= 1.3.59 =
-* Changed: Change instagram thumb with medium image.
-* Fixed: Notice in Extended album view in free version.
-* Fixed: Open folder on IOS in filemanager.
-
-= 1.3.58 =
-* Fixed: Page scrollbar after closing lightbox.
-
-= 1.3.57 =
-* Fixed: Bug after last update.
-
-= 1.3.56 =
-* Fixed: Bug after last update.
-
-= 1.3.55 =
-* Changed: Create custom post on album, gallery, tag save.
-* Fixed: Carousel view.
-
-= 1.3.54 =
-* Changed: Show notification to install Backup WD plugin only on plugin pages.
-
-= 1.3.53 =
-* Added: Show notice to install Backup WD plugin.
-
-= 1.3.52 =
-* Fixed: Bug on old versions of PHP
-
-= 1.3.51 =
-* Fixed: Security issue
-
-= 1.3.50 =
-* Fixed: Conflict with Jetpack Contact Form module.
-
-= 1.3.49 =
-* Changed: Increased generated thumbnails default dimensions.
-
-= 1.3.48 =
-* Fixed: Updated library to prevent conflict with PHP version 7.
-
-= 1.3.47 =
-* Improved: Resemble changes in gallery images, while deleting, moving or renaming images using Photo Gallery File Manager.
-
-= 1.3.46 =
-* Fixed: Shortcode pop-up style.
-
-= 1.3.45 =
-* Fixed: Bug on Import from library image sizes.
-* Fixed: Filemanager responsiveness.
-
-= 1.3.44 =
-* Fixed: Shortcode edit page responsiveness.
-* Fixed: Thumbnails transition effect in mosaic extended album view.
-
-= 1.3.43 =
-* Fixed: Security issue in filemanager.
-* Fixed: Image title/description direction in Slideshow view after image change.
-* Fixed: Instagram video thumbnail.
-* Fixed: Tags order by name in tags search list.
-
-= 1.3.42 =
-* Fixed: Scroll load with more than one gallery in a page.
-
-= 1.3.41 =
-* Added: Possibility to add images from Wordpress Media Library.
-* Fixed: Image info in lightbox with small effect duration.
-* Changed: Effect duration now can be float.
-
-= 1.3.40 =
-* Fixed: Images in a column
-
-= 1.3.39 =
-* Fixed: Removed empty "filter_search_name" from lightbox URL.
-* Fixed: Don't add Facebook/Instagram libraries if there is no need.
-* Added: Image quality (optional).
-
-= 1.3.38 =
-* Fixed: Gallery title for old versions.
-* Fixed: Conflict with Jetpack Photon module.
-
-= 1.3.37 =
-* Added: Show gallery title (optional from shortcode).
-* Added: Show gallery description (optional).
-* Added: Show image description in blog style view (optional).
-* Fixed: Required field validation.
-* Fixed: Filemanager.
-* Changed: Removed support forum link.
-
-= 1.3.36 =
-* Added: Gallery download  button.
-* Added: Enable/disable html editor.
-* Added: Overview page.
-
-= 1.3.35 =
-* Added: Support forum link.
-* Fixed: Instagram gallery blog style view.
-* Fixed: Conflict with "Wordfence Security" plugin.
-* Fixed: Images preload bug.
-* Fixed: Widget slideshow.
-* Changed: Possibility to set empty Images Directory.
-
-= 1.3.34 =
-* Fixed: Security issue in filemanager.
-
-= 1.3.33 =
-* Fixed: Filemanager.
-* Fixed: Saving gallery autoupdate interval.
-
-= 1.3.32 =
-* Fixed: Filemanager.
-* Fixed: JPEG quality on image reset.
-
-= 1.3.31 =
-* Added: Open lightbox from slideshow and carousel views.
-* Changed: Download original image from frontend.
-* Changed: Preload images in slideshow view.
-* Fixed: Scroll load in filemanager.
-* Added: Header for deleted image on shared image open.
-
-= 1.3.30 =
-* Changed: Scroll load in filemanager.
-* Fixed: Image dimensions on images reset.
-
-= 1.3.29 =
-* Changed: Possibility to include scripts only in necessary pages.
-
-= 1.3.28 =
-* Fixed: Filemanager allowed file types.
-* Fixed: Instagram.
-
-= 1.3.27 =
-* Changed: Removed bwg_option table.
-* Fixed: Masonry galleries bug in masonry album.
-
-= 1.3.26 =
-* Fixed: Sanitize folder names in filemanager.
-* Fixed: Random order (pagination and lightbox).
-* Fixed: Album widget sort direction.
-* Fixed: Images ordering bug in lightbox.
-* Fixed: Removed unnecessary spaces from order by.
-* Fixed: Gallery title bug in extended album view.
-* Fixed: Tags cloud widget styles conflict with some themes.
-* Fixed: Open lightbox from tag cloud.
-* Changed: Generate shortcode with ajax.
-
-= 1.3.25 =
-* Fixed: Google Fonts.
-* Added: Select all button on tags page.
-
-= 1.3.24 =
-* Fixed: Google Fonts list bug.
-
-= 1.3.23 =
-* Fixed: Ordering bug in Gallery Box.
-* Added: Possibility to include styles/scripts in necessary pages only.
-* Fixed: Share after image change.
-* Fixed: Author for custom posts.
-* Fixed: Removed unnecessary spaces from ordering.
-* Fixed: Tag select on mobile.
-* Changed: Include only necessary Google Fonts.
-
-= 1.3.22 =
-* Fixed: Styles on Twenty Seventeen theme.
-* Fixed: Conflict with lazy load in albums views.
-* Fixed: Google fonts bad request.
-* Fixed: Tag in gallery box url.
-* Fixed: German translation (Thanks to Hans-Jurgen Stephan).
-* Fixed: Tag pages display bug.
-* Fixed: Upload only images zip.
-* Fixed: Show galleries in pages loaded with ajax.
-* Fixed: Conflict with "All in One SEO Pack" plugin.
-
-= 1.3.21 =
-* Fixed: Frontend content language in AJAX response on Wordpress 4.7.
-* Fixed: Images check all in backend on Wordpress 4.7.
-* Fixed: Item price with parameter.
-
-= 1.3.20 =
-* Fixed: Redirect to url for masonry view.
-* Added: Redirect to url for slideshow and carousel views.
-* Updated: Sumoselect.
-
-= 1.3.19 =
-* Added: Image title position in image browser view (optional).
-* Added: Loading icon in slideshow view.
-* Added: Open album on title click in extended album view.
-
-= 1.3.18 =
-* Changed: Options page design.
-
-= 1.3.17 =
-* Changed: Dutch translations by Piet Kok.
-
-= 1.3.16 =
-* Fixed: Ampersand in watermark and advertisement text.
-* Fixed: Lightbox controls toggle button on mobile.
-* Added: Google fonts.
-* Changed: UploadHandler class name to prevent conflict with some themes.
-
-= 1.3.15 =
-* Added: Images bulk rotate.
-* Fixed: Messages in masonry album view.
-* Fixed: Show info on image change effect end.
-
-= 1.3.14 =
-* Fixed: Social Bulk Embed bug for facebook.
-* Fixed: Add facebook album bug.
-* Added: Tag select from shortcode.
-* Fixed: Improved tag search.
-
-= 1.3.13 =
-* Fixed: Instagram gallery autoupdate.
-* Fixed: Add images and videos in French sites.
-* Fixed: Image description with quotes.
-
-= 1.3.12 =
-* Fixed: Backend French translation.
-
-= 1.3.11 =
-* Fixed: Filename as alt/title on image insert.
-
-= 1.3.10 =
-* Changed: Image alt/title input size.
-
-= 1.3.9 =
-* Changed: Featured themes page.
-
-= 1.3.8 =
-* Fixed: Ratings with opened comments.
-* Changed: Updated Font Awesome to 4.6.3 version.
-
-= 1.3.7 =
-* Fixed: White spaces after image title.
-* Fixed: Masonry/mosaic galleries load in compact album view.
-* Fixed: Loading in filemanager.
-* Fixed: Back in Japan.
-
-= 1.3.6 =
-* Added: Bulk edit images title, description and redirect url.
-
-= 1.3.5 =
-* Fixed: Case sensitive search by name in Filemanager bug.
-* Changed: Show last uploaded files as first in Filemanager.
-
-= 1.3.4 =
-* Changed: Comments and rates pages design.
-* Fixed: Translated alert messages.
-
-= 1.3.3 =
-* Added: Backend translation on Romanian (thanks to Mirel Cical).
-* Fixed: Interval for checking for updates.
-* Changed: Featured plugins page.
-
-= 1.3.2 =
-* Fixed: XSS reported by Valentin Voigt.
-
-= 1.3.1 =
-* Fixed: Switching between blogs.
-
-= 1.3.0 =
-* Changed: Backend design.
-* Fixed: Random order album for widget.
-
-= 1.2.108 =
-* Added: Save as copy themes.
-* Fixed: Delete folder with single quote in name.
-* Fixed: Add facebook album with images more than 100.
-
-= 1.2.107 =
-* Fixed: Responsiveness
-* Fixed: Bug on full-size and fullscreen lightbox
-
-= 1.2.106 =
-IMPORTANT: Instagram changed the API. You need to get a new access token by using "Sign in with Instagram" button on the Options page in order to keep your Instagram Gallery functioning after June 1.
-* Changed: Instagram new API.
-* Changed: Increase get_options count.
-
-= 1.2.105 =
-* Changed: Deleted themes old fields.
-* Changed: Check if file exist on set watermark.
-* Fixed: Remove box shadow from navigation buttons.
-* Fixed: Deactivate after uninstall, when folder name is different from photo-gallery.
-
-= 1.2.104 =
-* Fixed: Search in gallery from widget.
-* Added: Effect duration option.
-
-= 1.2.103 =
-* Fixed: Text watermark responsiveness.
-* Added: Set/Reset watermark to all images at once.
-* Fixed: Description for masonry album views.
-
-= 1.2.102 =
-* Fixed: Search also in description.
-* Added: Options for slideshow widget.
-* Fixed: Import from media library.
-* Fixed: File manager loading.
-
-= 1.2.101 =
-* Fixed: Security issue
-
-= 1.2.100 =
-* Fixed: Add facebook single video.
-* Fixed: Styles on Wordpress 4.5.
-* Added: Right click protection for thumbnails.
-
-= 1.2.99 =
-* Fixed: Open lightbox from blog style, image browser and albums views.
-* Fixed: Vertical filmstrip with control buttons.
-* Added: Recreate all thumbnails at once.
-
-= 1.2.98 =
-* Added: Backend translation on Icelandic (thanks to Eggert Johannesson).
-* Fixed: Backend translation on Dutch.
-
-= 1.2.96 =
-* Fixed: Filemanager view type on large screens.
-* Added: Delete confirmation for galleries and images.
-* Changed: Featured plugins, themes page.
-
-= 1.2.95 =
-* Fixed: Advertisement link in slideshow.
-* Fixed: Comment, rating, ecommerce conflict.
-
-= 1.2.94 =
-* Fixed: Gallery media uploader files with withespaces in name.
-
-= 1.2.93 =
-* Added: Introduction tour.
-
-= 1.2.92 =
-* Fixed: Autoplay in lightbox.
-
-= 1.2.91 =
-* Fixed: Sort randomly in album views.
-* Added: Ligthbox background transparency.
-
-= 1.2.90 =
-* Fixed: Ecommerce loading div.
-* Fixed: Albums mosaic view.
-* Changed: Featured plugins page.
-
-= 1.2.89 =
-* Fixed: Possibility to set featured image for gallery custom post types.
-* Fixed: Masonry album thumbnail container transparency.
-* Fixed: Share conflict with Jetpack.
-* Fixed: Load more.
-
-= 1.2.88 =
-*  Fixed: Prevent javascript errors with empty options.
-*  Changed: Dutch translation (Thanks to Gerben H. Dijkstra).
-*  Changed: Italian translation (Thanks to Fabio Massimo Pari).
-*  Changed: Gallery/Album author do not change on update.
-*  Improved: Filemanager load time.
-
-= 1.2.87 =
-*  Changed: User Manual links.
-*  Fixed: Facebook add-on autoupdate bug.
-*  Added: Ecommerce add-on notice.
-
-= 1.2.86 =
-*  Added: Ecommerce add-on.
-*  Fixed: Bug in filemanager.
-
-= 1.2.85 =
-*  Fixed: Delete all custom posts on uninstall.
-*  Fixed: Filter by name in lightbox.
-
-= 1.2.84 =
-*  Added: Placeholder for search by name (optional).
-*  Fixed: Styles conflict with Twenty Sixteen theme.
-
-= 1.2.83 =
-*  Fixed: Add selected images to gallery.
-*  Fixed: Control buttons and filmstrip conflict in lightbox.
-
-= 1.2.82 =
-*  Added: "Load More..." translation.
-*  Fixed: "lightbox_ctrl_btn_pos" bug.
-
-= 1.2.81 =
-*  Fixed: Bug on options save.
-*  Changed: Featured themes page.
-
-= 1.2.80 =
-*  Changed: Social options.
-*  Fixed: Instagram only gallery.
-
-= 1.2.79 =
-*  Fixed: Youtube embed size in firefox.
-*  Fixed: Russian translation (Thanks to Ruslan Tertyshny).
-
-= 1.2.78 =
-*  Fixed: Compatibility with Wordpress 4.4.
-*  Fixed: Undefined property on album widget.
-*  Fixed: German backend translation.
-*  Fixed: Dutch backend translation.
-*  Added: Youtube embed with start time.
-
-
-= 1.2.77 =
-*  Fixed: Themes.
-*  Fixed: Error on uninstall.
-
-= 1.2.76 =
-*  Changed: Theme DB table structure.
-*  Fixed: Error on facebook share.
-
-= 1.2.75 =
-*  Fixed: German translation.
-*  Changed: Featured plugins page.
-
-= 1.2.74 =
-*  Changed: Share url.
-*  Fixed: Twitter share.
-*  Added: Possibility to add custom style for front end thumbnails.
-
-= 1.2.73 =
-*  Fixed: SEO bug.
-
-= 1.2.72 =
-*  Fixed:Bug on options save.
-
-= 1.2.71 =
-*  Fixed: Quotes in advertisement text.
-*  Fixed: Reset, edit unsaved image.
-*  Fixed: Facebook share image sizes.
-*  Fixed: Images loop when swiping.
-
-= 1.2.70 =
-*  Changed: Blog style view scroll load.
-*  Changed: Lightbox buttons responsiveness.
-*  Fixed: Spanish translation by Alexandro Lacadena.
-
-= 1.2.69 =
-*  Fixed: Album view bug.
-
-= 1.2.68 =
-*  Fixed: Random ordering.
-*  Changed: Pause embed video on image change.
-*  Fixed: Translations bug in javascript.
-
-= 1.2.67 =
-*  Added: Backend translation.
-*  Fixed: Pagination on tags page.
-
-= 1.2.66 =
-*  Fixed: Minor bug in backend.
-
-= 1.2.65 =
-*  Fixed: Right click protection on Safari.
-*  Added: Export/Import add-on.
-
-= 1.2.64 =
-*  Fixed: Embed media responsiveness.
-*  Changed: Permissions for shortcode(pro version).
-*  Added: Show/hide custom post types (optional).
-
-= 1.2.63 =
-*  Fixed: Bug in comments.
-*  Changed: Licensing page.
-
-= 1.2.62 =
-*  Changed: Thumbnail click action.
-
-= 1.2.61 =
-*  Added: Filter by tags in frontend.
-
-= 1.2.60 =
-*  Changed: Notices show order.
-
-= 1.2.59 =
-*  New: Facebook embed add-on.
-*  Added: Add-ons page.
-
-= 1.2.58 =
-*  Added: Translation in Icelandic. Thanks to Eggert Johannesson.
-*  Fixed: Serbian translation.
-*  Fixed: Share url on Pinterest.
-
-= 1.2.57 =
-*  Fixed: Edit images with quotas in name.
-*  Fixed: Edit newly added images.
-*  Changed: Featured plugins page.
-
-= 1.2.56 =
-*  Fixed: Play/pause button in carousel view.
-*  Fixed: Recreate thumbnail.
-*  Fixed: Division by zero in pagination.
-*  Changed: Add to pinterest description image alt.
-
-= 1.2.55 =
-*  Added: Support/rate us messages.
-
-= 1.2.54 =
-*  Fixed: Image browser view pagination styles.
-
-= 1.2.53 =
-*  Fixed: Open shared album image.
-*  Fixed: Image browse pagination.
-
-= 1.2.52 =
-*  Added: Images count parameter for load more.
-*  Fixed: Pinterest share.
-*  Fixed: Deprecated function in carousel.
-
-= 1.2.51 =
-*  Changed: Compatibility with Wordpress 4.3.
-
-= 1.2.50 =
-*  Fixed: JavaScript conflict with some themes.
-
-= 1.2.49 =
-*  Added: Call photo gallery by php function.
-
-= 1.2.48 =
-*  Fixed: Back to previous album/gallery.
-
-= 1.2.47 =
-*  Added: Transition for mosaic view.
-
-= 1.2.46 =
-*  Changed: Activate, Deactivate hooks for multisite.
-
-= 1.2.45 =
-*  Changed: Licensing page.
-
-= 1.2.44 =
-*  Fixed: "Open image in original size" and "Download original image" for embed.
-*  Fixed: Instagram thumbnail.
-*  Fixed: Watermark link.
-
-= 1.2.43 =
-*  New: Tools for editing images.
-
-= 1.2.42 =
-*  Fixed: Security issue.
-
-= 1.2.41 =
-*  Fixed: Embed media for wordpress lower than 4.0.0.
-
-= 1.2.40 =
-*  Changed: Save images ordering in admin.
-*  Fixed: Warnings in filemanager.
-*  Fixed: Prevent opening lightbox on swipe.
-
-= 1.2.39 =
-*  New: Search by name in file manager.
-
-= 1.2.38 =
-*  New: Carousel view.
-*  Fixed: Horizontal Mosaic view bug.
-*  Fixed: Print bug.
-
-= 1.2.37 =
-*  New: Load more with scroll.
-*  Fixed: Thumbnail size on recover.
-
-= 1.2.36 =
-*  Changed: Featured plugins page.
-*  Fixed: Mosaic view show title.
-*  Fixed: AddThis javascript bug.
-
-= 1.2.35 =
-*  New: Addthis (pro version).
-*  Fixed: Link text font size in extended album description.
-
-= 1.2.34=
-*  New: Recreate thumbnail button in gallery page.
-
-= 1.2.33 =
-*  Fixed: Delete/update custom posts on gallery/album edit.
-*  Fixed: Image width/height size with open comments.
-
-= 1.2.32 =
-*  New: Loop option for lightbox.
-*  Fixed: Embed media by YouTube short url.
-
-= 1.2.31 =
-*  New: Load more button instead of pagination (optional).
-*  Fixed: Minor bug on gallery save on php5.3.
-
-= 1.2.30 =
-*  Change links.
-
-= 1.2.29 =
-*  Changed: Featured plugins page.
-*  New: Featured themes page.
-
-= 1.2.28 =
-*  change user guide links.
-*  minor bug fixed.
-
-= 1.2.27 =
-*  minor bug fixed.
-
-= 1.2.26 =
-*  Fixed: Lightbox opening bug for ios.
-
-= 1.2.25 =
-*  Fixed: Lightbox opening bug for mobile browsers.
-
-= 1.2.24 =
-*  duplicated id in slideshow view.
-*  deprecated options removed (roles).
-
-= 1.2.23 =
-*  bug in preload option fixed.
-
-= 1.2.21 =
-*  minor bugs fixes.
-
-= 1.2.19 =
-*  conflict with some themes fixed.
-
-= 1.2.18 =
-*  New: Bottom pagination in admin views.
-*  New: Improve SEO.
-*  New: Autohide option for slideshow and lightbox navigation buttons.
-*  New: Read image meta data.
-*  Fixed: Slideshow bullets centering.
-*  Fixed: Admin-ajax url for frontend.
-*  Fixed: Upload images to .original not resized.
-*  Fixed: Order by filename.
-
-= 1.2.17 =
-Edit licensing page.
-
-= 1.2.16 =
-*  New: Embed support.
-*  New: Photo gallery can be loaded through AJAX request.
-*  New: Image meta auto-filling.
-*  Changed: Deleted tag posts.
-*  Changed: Improved security of backend.
-*  Fixed: Thumbnail and filmstrip sizes for embeds.
-*  Fixed: Search in backend galleries view.
-*  Fixed: Gallery box image URL on a page with multiple galleries.
-*  Fixed: Maximize/resize buttons in gallery box when exiting fullscreen.
-*  Fixed: Other minor bugs.
-
-= 1.2.15 =
-*  added large image url in page source for SEO.
-
-= 1.2.14 =
-*  shortcode issue fixed .
-
-= 1.2.13 =
-*  [CVE-2015-2324] security issue fixed in filemanager.
-This vulnerability was discovered by Fortinet's FortiGuard Labs.
-
-= 1.2.12 =
-*  Front-end image sorting possibility (dropdown) for the users.
-
-= 1.2.11 =
-*  security issue fixed.
-*  bug in fullscreen button and loading image animation fixed.
-
-= 1.2.9 =
-*  updated font-awesome to 4.2.0 version.
-*  sort bug in ligthbox.
-
-= 1.2.8 =
-*  security issue fixed.
-
-= 1.2.7 =
-*  masonry album view type.
-*  single quota bug in image fixed.
-
-= 1.2.6 =
-*  bug in new image save fixed.
-
-= 1.2.5 =
-*  wrap around in lightbox.
-
-= 1.2.4 =
-*  pagination input.
-
-= 1.2.3 =
-*  play icon over the video thumbnail.
-
-= 1.2.2 =
-*  add upload images with custom size.
-
-= 1.2.1 =
-*  minor changes in shortcode generation code.
-
-= 1.2.0 =
-*  change shortcodes.
-
-= 1.1.30 =
-*  images count in ligthbox (optional - only in options page).
-*  images count column in galleries table.
-*  WordPress Search Integration by gallery and album title.
-*  show gallery, album title (optional - only in options page).
-
-= 1.1.29 =
-*  Bug fixed in tag cloud widget.
-
-= 1.1.28 =
-*  Bug fixed in filemanager.
-
-= 1.1.27 =
-*  change in loading.
-
-= 1.1.26 =
-*  added option "Import from Media Library".
-
-= 1.1.25 =
-*  bug fixed in save gallery.
-
-= 1.1.24 =
-*  Improve translation, Add tags to all images.
-
-= 1.1.23 =
-*  redirect from widget, unique tags name.
-
-= 1.1.22 =
-*  order option for album images.
-
-= 1.1.21 =
-*  added option for sorting gallery images within album.
-
-= 1.1.20 =
-*  bug fixed on lightbox.
-
-= 1.1.19 =
-*  preload images count options.
-
-= 1.1.18 =
-*  redirect url optional.
-
-= 1.1.15 =
-*  added search images in gallery (optional), optional info, resize.
-
-= 1.1.14 =
-*  added option for show image title/description on lightbox.
-
-= 1.1.13 =
-*  added tag cloud ordering option, keep aspect ratio.
-
-= 1.1.12 =
-*  youtube, vimeo.
-
-= 1.1.11 =
-*  added tag cloud options and zip upload.
-
-= 1.1.10 =
-*  bug fixed on WP 3.9 editor.
-
-= 1.1.9 =
-*  gallery alignment bug fixed.
-
-= 1.1.8 =
-*  corrected album ordering and added slideshow widget filmstrip height option.
-
-= 1.1.7 =
-*  added swipe effect on lightbox.
-
-= 1.1.6 =
-*  added option disable/enable right click.
-
-= 1.1.5 =
-*  bug fixed in slideshow .
-
-= 1.1.4 =
-*  removed enters from code (conflicts fixed).
-
-= 1.1.2 =
-*  critical bug with uninstall fixed.
-
-= 1.0.8 =
-*  improved file upload and save on gallery.
-
-= 1.0.6 =
-*  improved filemanager functionality, fix bug on widget.
-
-= 1.0.5 =
-*  Fixed: File manager.
-
-= 1.0.4 =
-*  New: Added shortcode generator
-*  New: Thumbnail title, thumb size in filemanager.
-*  Fixed: Slideshow.
-
-= 1.0.3 =
-*  Fixed: Album view.
-
-= 1.0.2 =
-*  Fixed: php 5.2 compatibility.
-
-= 1.0.1 =
-*  Initial version.
-
-
-== Screenshots ==
-1.  Photo Gallery - Popup View
-2.  Photo Gallery - Thumbnails View
-3.  Photo Gallery - Image Browser View
-4.  Photo Gallery - Masonry View (Premium version)
-5.  Photo Gallery - Mosaic View (Premium version)
-6.  Photo Gallery - Shortcode popup
-7.  Photo Gallery - Galleries list
+= 7.3.7 (December 27, 2021) =
+* Bug: Fixed issues in fill in the blanks question type
+* Bug: Fixed issues with category selection on result page
+* Bug: Fixed issues with deletion and duplication capabilities for non admin users
+* Bug: Fixed issue where url parameters are being translated
+* Bug: Fixed the issues with category points and score template variables
+* Feature: Added a feature to hide/show columns in admin results page
+* Enhancement: Introduced Page Name and Page URL columns to admin results table
+* Enhancement: Made UI improvements in polar question type slider
+* Enhancement: Made UI improvements in template variable popup
+* Enhancement: Made improvements in Audit Logs
+
+= 7.3.6 (December 10, 2021) =
+* Hotfix: Issues with survey form type Fixed
+* Hotfix: Issues with simple form fixed
+* Hotfix: Issues with random questions feature Fixed
+* Hotfix: Issues with comment form and hints fixed
+* Hotfix: Issues with deselect option fixed
+
+= 7.3.5 (November 17, 2021) =
+* Bug: Fixed issue while permanently deleting bulk quizzes
+* Bug: Fixed issue while editing questions imported from question bank
+* Bug: Fixed issue with question categories
+* Bug: Fixed various security vulnerabilities
+* Bug: Fixed Authenticated SQL injection
+* Bug: Fixed issues with polar question type
+* Bug: Fixed issue where multiple popups were appearing
+* Bug: Fixed issues where refreshing the page resets answered questions
+* Bug: Fixed issues with QSM block
+* Bug: Fixed issue with autofill for contact input
+* Bug: Fixed issues with polar question type slider on admin results page
+* Feature: Added support for webp file format
+* Feature: Added new template variable %MINIMUM_POINTS%
+* Enhancement: Replaced shortened urls with original urls
+* Enhancement: Refactored code to enqueue JS and CSS files as per coding standards
+* Enhancement: Refactored code to utilise libraries bundled with WordPress core
+* Enhancement: Updated out of date libraries
+* Enhancement: Removed CDN and third party server scripts
+* Enhancement: Sanitized, Escaped, and Validated all variable, file uploads and data
+* Enhancement: Moved inline scripts to wp_enqueue_script and wp_add_inline_script
+
+= 7.3.4 (October 1, 2021) =
+* Bug: Fixed the issue with validation of date field for contact section
+
+= 7.3.3 (October 1, 2021) =
+* Bug: Fixed the issue where %AVERAGE_CATEGORY_POINTS_X% was calculating total instead of average.
+* Bug: Fixed the issue where no category found for questions imported from question bank.
+* Bug: Fixed the issue where the limit number of questions per category was not working.
+* Bug: Fixed the issue with "Limit question per category" setting when "Random" option is enabled
+* Bug: Fixed the issue where timer was not showing on single page quiz.
+* Bug: Fixed the issue when recaptcha button not showing when question per page quiz options is enabled.
+* Bug: Fixed the issues while duplicating a quiz.
+* Bug: Fixed the issue where date question type shows date in reverse order on the results page and in emails.
+* Feature: Added date field in quiz contact tab.
+* Enhancement: Added Correct/Incorrect answers in different color in email.
+
+= 7.3.2 (September 06, 2021) =
+* Bug: Added Translation for Time is up and Cancel button.
+* Bug: Fixed the issue of category name not visible.
+* Bug: Fixed the issue of limit number of questions per category is not working.
+* Bug: Fixed the issue of results page and email showing only 1 question and its answer multiple times.
+* Bug: Fixed the issue of %POLL_RESULT_X% not displaying images while using rich answers.
+* Bug: Fixed the issue of %AVERAGE_CATEGORY_POINTS_X% variable not working.
+* Bug: Fixed the issue of validation errors appearing on the questions before entering the responses.
+* Bug: Fixed the issue of timer not showing on the quiz.
+* Bug: Fixed security issue to prevent Cross-Site Scripting attacks.
+
+
+= 7.3.1 (August 13, 2021) =
+* Bug: Fixed the error on updating database.
+* Bug: Fixed the issue of everything displayed in the same line in the results page.
+* Bug: Fixed the issue of fill in the blank question type not showing user answer and correct answer in the results page and email.
+* Feature: Added global default settings for quiz options.
+* Enhancement: Added option to deny quiz submission after end date/time
+* Enhancement: Made order of random questions same on the results page and the quiz frontend.
+
+
+= 7.3.0 (July 29, 2021) =
+* Feature: Added option to add multiple categories to single question.
+* Feature: Added option to display quiz results based on category points.
+* Enhancement: Extended category based template variables to support multiple categories.
+* Bug: Fixed issue with quiz duplication.
+
+= 7.2.3 (July 15, 2021) =
+* Bug: Fixed issue fatal error on php version below 7.3.
+
+= 7.2.2 (July 14, 2021) =
+* Feature: Implemented multiple fill in the blanks support.
+* Feature: Implemented new template variable %TIMER_SECONDS% to show left over seconds.
+* Feature: Implemented new option to limit number of questions per category.
+* Bug: Fixed issue with template variable %AMOUNT_INCORRECT%.
+* Bug: Fixed issue of undefined index notice of facebook app id.
+* Bug: Fixed issue with saving conditions in email and results tab.
+* Bug: Fixed issue of wordpress database error notice on fresh installation.
+* Bug: Fixed issue with validation on retake quiz
+
+= 7.2.1 (June 25, 2021) =
+* Bug: Fixed layout issues with rtl languages.
+* Bug: Fixed issue of user comments not appearing on admin result page.
+* Bug: Fixed issue with recaptcha not appearing on random quiz.
+
+= 7.2.0 (June 21, 2021) =
+* Feature: Introduced QSM Themes.
+* Feature: Introduced image type answers.
+* Bug: Fixed issue where there is an empty last page while using auto pagination.
+
+= 7.1.19 (June 3, 2021) =
+* Bug: Fixed security issue related to IP address sanitization.
+
+= 7.1.18 (May 31, 2021) =
+* Bug: Fixed recently discovered security issues.
+
+= 7.1.17 (May 28, 2021) =
+* Bug: Fixed the issue where page title shows Nan:Nan:Nan on reload.
+* Bug: Fixed the issue when editing duplicate questions updates original questions.
+
+= 7.1.16 (April 29, 2021) =
+* Bug: Fixed the issue with Facebook share.
+* Bug: Fixed issue with timer starting on intro page.
+* Bug: Fixed pagination issue with multiple quizzes on same page.
+* Bug: Fixed issue with tiny-mce causing conflict with other plugins.
+* Bug: Fixed the issue of logic rules not being copied when duplicating quiz.
+* Feature: Added rich textbox for correct answer information.
+* Feature: Added additional condition for Email template for different answers.
+
+= 7.1.15 (April 13, 2021) =
+* Bug: Fixed SQL errors due to which questions were disappearing from some old quizzes.
+* Bug: Fixed [qsm_result] shortcode format in results page.
+* Bug: Fixed the issue with incorrect points while using Latex commands along with the anchor tags in the rich answers.
+
+= 7.1.14 (March 25, 2021) =
+* Bug: Fixed security and Vulnerability issues.
+* Bug: Fixed the inability to recognize correct answer for Question type Paragraph.
+* Bug: Fixed the issue of  question not displaying when randomizing questions by category.
+* Bug: Fixed the issue of [latex] shortcode not working on retake quiz.
+* Enhancement: Added the feature to Unlink questions from quiz.
+* Enhancement: UI improvements for Quiz Editor.
+
+= 7.1.13 (March 9, 2021) =
+* Bug: Fixed several security issues.
+* Bug: Fixed the issue of audio and video player not showing in question content
+* Bug: Fixed the issue of [latex] shortcode not showing Red cross mark for incorrect option.
+* Bug: Fixed the issue required field getting surpassed by spaces in contact form.
+
+= 7.1.12 (February 22, 2021) =
+* Bug: Fixed prevention of SQL injection while using result shortcode and question bank.
+* Bug: Fixed the issue of broken [latex] shortcode in result and user dashboard page.
+* Enhancement: Added option to end the quiz if answer is wrong.
+* Enhancement: Added option to turn off the HTML auto complete.
+* Enhancement: Modified  background color to fix contrast ratios from SEO perspective.
+
+= 7.1.11 (January 27, 2021) =
+* Bug: Fixed jquery issue while editing the result page.
+* Bug: Added string translation for %POLL_RESULTS_X% variable.
+* Bug: Fixed incorrect score while using point value with decimal.
+* Enhancement: Added link support in contact field label.
+* Enhancement: Added HTML support in email tab.
+* Enhancement: Added option to add link in Hint field.
+* Enhancement: Added support for HTML tags in Correct answer info field.
+* Enhancement: Added option to view roadmap.
+* Enhancement: Added option to delete questions from database.
+* Enhancement: Changed the quiz status by default to Draft.
+
+
+= 7.1.10 (December 29, 2020) =
+* Bug: Fixed the inconsistency between no of participants and available results.
+* Bug: Fixed incorrect pagination in results page.
+* Bug: Fixed the issue with interchanging of settings while using two quiz on same page.
+* Bug: Fixed shortcode not working while using rich answer.
+* Bug: Fixed ID and Class names not showing on result page while using rich answer.
+* Bug: Fixed selected options not being shown while using Polar question type.
+* Enhancement: Changed the captcha validation message.
+* Enhancement: Added the option to round off Score of correct/incorrect answer to a whole number.
+
+= 7.1.9 (December 14, 2020) =
+* Bug: Fixed the issue where answers with apostrophe's are not being recognized as correct.
+* Bug: Fixed the issue where inline are shown twice when Random Questions are enabled.
+* Bug: Fixed the issue with point score and maximum point variable
+* Bug: Fixed the issue where only last answer display as correct when all the answers were marked correct.
+* Enhancement: Added Limit Text option for paragraph question type.
+* Enhancement: Added an option for inserting a link in the Correct info.
+
+= 7.1.8 (November 18, 2020) =
+* Bug: Fixed required field not working while using Date question type.
+* Bug: Fixed the issue of right answers containing apostrophes marked as incorrect in Multiple Response/ Multiple Choice questions
+* Bug: Fixed incorrect message while using rich answer type while using Show results inline option.
+* Bug: Fixed CSS overlapping issue for quiz_section class while using auto pagination.
+* Bug: Fixed continuous loading of result page while using landing page addon.
+* Bug: Fixed number question type not being recorded while using Force submit after timer expires.
+* Enhancement: Allowed plus, dash, bracket and slash in phone contact field.
+* Enhancement: Added option to limit the characters in Number question type.
+
+= 7.1.7 (November 10, 2020) =
+* Bug: Fixed math formula not showing on result page.
+* Bug: Fixed incorrect results while using %POLL_RESULTS_X% template variable.
+* Bug: Fixed advanced timer not showing while questions per page option.
+* Bug: Fixed translation issue with string 'No Answer Provided'.
+
+= 7.1.6 (October 29, 2020) =
+* Bug: Fixed division by zero error while limiting number of questions.
+* Bug: Fixed inclusion  of  file upload question type in calculation of  average point and average category point.
+
+= 7.1.5 (October 26, 2020) =
+* Bug: Fixed  logic addon rules not being copied while duplicating quiz.
+* Bug: Fixed vietnamese accents and special characters not being recognized in quiz result page.
+* Bug: Fixed apostrophe and double quotes not working with Dropdown question type.
+* Bug: Fixed apostrophe being marked as incorrect for %USER_ANSWERS_DEFAULT% template variable.
+* Bug: Fixed question's answers being case sensitive while using %USER_ANSWERS_DEFAULT% template variable.
+* Bug: Fixed HTML codes appearing in email  while using rich answer type.
+* Bug: Fixed Polar question type scoring being rounded off to integers incorrectly.
+* Bug: Fixed timer not appearing while using retaking a quiz on result page.
+
+= 7.1.4 (October 06, 2020) =
+* Bug: Fixed point score issues when answer type is Rich Answer with HTML tags.
+* Enhancement: Added JS hook for quiz to enhance JS event.
+* Enhancement: Added .pot file to translate string into any language.
+* Enhancement: Added %POINT_SCORE% variable support in %QUESTIONS_ANSWERS% template variable.
+* Enhancement: Added option to display Correct Answer Info with inline result.
+
+= 7.1.3 (September 22, 2020) =
+* Bug: Fixed issues when email templates were not showing if classic editor was disabled.
+* Bug: Fixed the issue of Certificate Addon link not showing in admin result detail page issue.
+* Bug: Fixed point score calculation issue for rich answers.
+* Bug: Fixed the issue of question title  not showing on front while using captcha question type.
+* Bug: Fixed the issue of  Comment Field showing placeholder text  when the comment field is blank.
+* Bug: Removed unnecessary gap between question and answers in quiz result page.
+* Bug: Fixed the issue of text showing in the next line on mobile while using Fill in the blank question type.
+* Bug: Fixed the issue of  apostrophes showing backslash  in email content.
+* Bug: Fixed the issue of cloning of the question which was creating a blank answer
+* Bug: Fixed conflict between %QUESTION_ANSWER_X% variable and Extra Template Variables.
+* Bug: Fixed %QUESTION_ANSWER_X% variable content issue in email.
+* Enhancement: Implemented %CORRECT_SCORE% template variable score to round figure.
+* Enhancement: Added the option to disable scroll on click of next and previous button.
+* Enhancement: Added the option of Deleting a question from question bank while deleting the quiz.
+* Enhancement: Added a message when multiple choice limits are reached while using Multiple Response and Horizontal Multiple Response question type.
+
+= 7.1.2 (September 04, 2020) =
+* Bug: Fixed admin results page to make it compatible with new variable %QUESTIONS_ANSWERS_DEFAULT%.
+* Bug: Fixed issues with %QUESTIONS_ANSWERS_DEFAULT% variable in quiz result while using point based quiz.
+* Bug: Fixed validation issue on front end while using Deselect Answer option.
+* Bug: Fixed issues with inline results when there is extra spacing between words.
+* Enhancement: Added feature to show the uploaded file into media library for File Upload question type.
+
+= 7.1.1 (September 02, 2020) =
+* Bug: Fixed problem with questions on front end while using random questions option.
+* Bug: Fixed submit button overlapping issue with progress bar for auto pagination.
+* Bug: Fixed the UI of meta boxes on Dashboard Page, Tools Page and Help Page.
+
+= 7.1.0 (August 31, 2020) =
+* Enhancement: Added a new variable %USER_ANSWERS_DEFAULT% to improve default result page. All new quizzes will have this variable by default.
+* Enhancement: Created new %AMOUNT_INCORRECT% and %AMOUNT_ATTEMPTED% template variable to enhance the quiz result page.
+* Enhancement: Added time( hours and minute ) support in quiz start and end date.
+* Enhancement: Added option in setting menu to delete data related to QSM on deletion of plugin.
+* Enhancement: Added option in setting menu to enable/disable the Background Quiz Email Process.
+* Enhancement: Added qsm prefixes to email classes.
+* Enhancement: Added feature to view uploaded file in admin result page for File Upload question type.
+* Enhancement: Added option to show only title in quiz result page.
+* Enhancement: Added a button to view uploaded file in quiz result page and replaced the empty spaces in the uploaded file slug with dashes.
+* Enhancement: Added a check box to select/deselect question in Question Bank Popup.
+* Bug: Fixed issues where questions were not showing up in admin when there is no pages in quiz.
+* Bug: Fixed jquery error when editor is changed to text in Quiz text tab.
+* Bug: Fixed PHP 7.4 Sentry Issues while creating new quiz.
+* Bug: Fixed issues with Allowed file types while question editing.
+* Bug: Fixed submit button position for auto pagination.
+* Bug: Fixed issues with quiz loading when pagination is enabled.
+
+= 7.0.2 (August 18, 2020) =
+* Enhancement: Checked compatibility with WordPress 5.5.
+* Enhancement: Added option to customize the inline correct/incorrect messages.
+* Enhancement: Added video, audio, youtube and gallery support while displaying message before quiz.
+* Enhancement: Added support of template variables when redirecting to result page.
+* Enhancement: Added new template variable %MAXIMUM_POINTS% to display the maximum possible points per quiz.
+* Enhancement: Added option to select quiz in Gutenberg block editor.
+* Enhancement: Email and name fields will be captured automatically for logged in user.
+* Enhancement: Upgraded user interface of addons settinga page.
+* Bug: Fixed score calculation issues.
+* Bug: Fixed issues while editing quiz's text tab.
+* Bug: Fixed issue where question title not showing for Polar question type.
+* Bug: Fixed calculation issues while using Polar question type.
+* Bug: Fixed validation issues with phone field in contact tab.
+* Bug: Fixed issue where option to limit choices was not working for horizontal multiple response question type.
+* Bug: Fixed security vulnerability (discovered by NinTechNet).
+* Bug: Fixed issue where number of items per page was not working on Quizzes/Surveys page.
+* Bug: Fixed issue with required checkbox while editing questions.
+* Bug: Fixed extra contact field were not showing in admin result new template.
+* Bug: Fixed issues with the title while retaking a quiz.
+* Bug: Fixed issue where category not assigning while editing the question.
+
+= 7.0.1 (August 05, 2020) =
+* Enhancement: Added option to set items per page while adding questions from question bank.
+* Enhancement: Hide question description by default or when empty.
+* Enhancement: Fixed the question number position while displaying questions.
+* Enhancement: Added new option to skip validations when timer expires.
+* Enhancement: Redesigned addons setting page.
+* Enhancement: Renamed the question type for better understanding [Read Documentation](https://quizandsurveymaster.com/docs/v7/questions-tab/#Question-Type).
+* Bug: Fixed issue with storing results when questions are more than 100.
+* Bug: Fixed issue with force submit option after timer expiry.
+* Bug: Fixed incorrect data issue in email when using %QUESTIONS_ANSWERS%.
+* Bug: Fixed broken layout when editing or adding question.
+* Bug: Fixed security vulnerability (discovered by Wordfence).
+
+= 7.0.0 (July 22, 2020) =
+* Enhancement: Complete UI overhaul QSM admin view including new Dashboard
+* Enhancement: A new wizard to create quizzes effortlessly
+* Enhancement: Separate field for question title when you edit questions
+* Enhancement: Updated UI of several pages in admin panel
+* Enhancement: Added new template for results page in admin panel
+* Enhancement: Added background email feature to improve performance while displaying results.
+* Bug: Fixed issue where recaptcha appears on every page
+* Bug: Fixed a database error where some users were not able to create a quiz (Error Code: 0001)
+* Bug: Fixed cross-site scripting vulnerability (discovered by Vishnupriya Ilango of Fortinet's FortiGuard Labs.)
+* Bug: Fixed issues while duplicating a quiz
+
+= 6.4.12 (June 22, 2020) =
+* Bug: Fixed validation issue in email with spaces.
+* Bug: Fixed issues with settings related to number of times a user can take quiz.
+* Bug: Fixed missing time calculation while retaking quiz.
+* Bug: Fixed incorrect calculation of %QUESTION_ANSWER_CORRECT% and %QUESTION_ANSWER_INCORRECT% variables.
+* Bug: Fixed time up popup with advanced timer on retaking quiz.
+* Bug: Removed irrelevant queries running behind the scene on each admin page.
+* Bug: Removed duplicate column name database error.
+* Bug: Removed orphaned plugin settings on its deletion.
+* Bug: Fixed issues with fill in the blank question type when using polylang.
+* Enhancement: Added user notification for collecting and storing IP addresses setting.
+* Bug: Fixed inconsistent polar question type title.
+
+= 6.4.11 (May 22, 2020) =
+* Bug: Removed static data from about us page.
+* Bug: Fixed progress bar JS error and its calculation issues.
+* Bug: Fixed issue with spaces before tables in questions.
+* Bug: Fixed scroll to top issue for pagination.
+* Bug: Fixed incorrect calculation with %AMOUNT_CORRECT% and %POINT_SCORE% variables.
+* Bug: Removed unnecessary query repetitions.
+* Enhancement: Added filter to add additional data to email content.
+* Enhancement: Trim white space at the end of text answers.
+* Enhancement: Created new function to check whether plugin is activated or not (https://wordpress.org/support/topic/error-on-submitting-quiz/#post-12821263)
+* Enhancement: Added progress bar support for options tab pagination.
+* Enhancement: Added new variable %QUESTION_ANSWER_X% to show specific question’s answer.
+
+= 6.4.10 (May 05, 2020) =
+* Bug: Fixed issue while using quotes in CSS  (https://github.com/QuizandSurveyMaster/quiz_master_next/issues/874).
+* Bug: Fixed issue where text label overrides checkbox.
+* Bug: Fixed duplicate messages when login is required.
+* Bug: Fixed unwanted appearance of timer popup (https://wordpress.org/support/topic/time-is-up-message-is-displayed-for-odd-reason/#post-12749059).
+* Bug: Fixed issue with latex syntax on result page.
+* Enhancement: Added pagination while importing questions from question bank to increase performance
+
+= 6.4.9 (April 21, 2020) =
+* Bug: Fixed popup design issues.
+
+= 6.4.8 (April 20, 2020) =
+* Bug: Changed the quiz post type slug to solve the conflict with LMS plugin
+* Feature: Added the button to remove the result data permanent
+* Feature: Added supporting code for new advanced timer
+* Feature: Option to select categories for random questions
+* Enhancement: JavaScript error messages will show up only for WordPress admins.
+
+= 6.4.7 (April 07, 2020) =
+* Bug: Solved jquery UI error
+* Bug: Customized text using the "Text tab" and remove from "Options Tab" for user is not logged in
+* Bug: Fixed share Quizz's results on Social Media ( https://wordpress.org/support/topic/sharing-to-social-media/ )
+* Bug: For polar question type added the validation while creating option
+* Bug: Solved phone number field validation
+* Bug: Solved User Dashboard addon issue for first row
+* Feature: Special capabilities #810 ( https://github.com/QuizandSurveyMaster/quiz_master_next/issues/810 )
+* Feature: Added Show JS Error library to show the JS Error in quiz page
+* Feature: Changed type of quiz_results to MEDIUMTEXT (16M size) ( https://github.com/QuizandSurveyMaster/quiz_master_next/issues/522 )
+
+= 6.4.5 (March 16, 2020) =
+* Bug: Hint not readable
+* Bug: Full html of the option is being output in the ID of wrapper div and in the value of the option ( https://github.com/QuizandSurveyMaster/quiz_master_next/issues/849 )
+* Bug: QSM not picking up user select answer when empty spaces at the end
+* Feature: Added checkbox for selecting questions from question bank ( https://wordpress.org/support/topic/adding-questions-from-question-bank/ )
+* Feature: Take to quiz edit after creating a new quiz
+* Feature: added 'deselect answer' button for multiple choice and horizontal multiple choice question type
+
+= 6.4.4 (Feb 24, 2020) =
+* Bug: Security Issues reported by WORDFENCE
+* Bug: Change text in Get a Free Addon page
+* Feature: Change sendy to sendinblue in free addon page
+* Feature: Added sorting functionality on name and last activity
+
+= 6.4.3 (Feb 6, 2020) =
+* Bug: Solved user limit issue with ip address
+* Bug: Solved Search input issue on Quizzes/Surveys
+* Added: added question type help link and changed the old documentation in whole plugin
+* Feature: Added polar question type
+
+
+= 6.4.2 (Jan 27, 2020) =
+* Bug: Solved Email without (https://github.com/QuizandSurveyMaster/quiz_master_next/issues/831)
+
+= 6.4.1 (Jan 24, 2020) =
+* Bug: Solve vulnerability issues reported by wordfence
+* Bug: PHP notices in Settings page
+* Bug: Audio files does not show and play in the Question
+* Bug: Unable to rename quiz
+* Bug: Thumbnail and Medium size image does not show up in Question
+* Bug: PHP warnings in get free adon page
+* Bug: Video Shortcode does not work in Question
+* Feature: WordPress 5.3 compatability
+
+= 6.4 (Jan 1, 2020) =
+* Bug: Result summary page is not displaying Math problems
+* Feature: Client wants users to upload images/attachments to the survey
+* Bug: Edit question popup not working
+* Bug: PHP Warnings
+* Bug: Quiz post setting not working properly
+* Bug: Broken links to documentation pages in quiz setting
+* Bug: Export & Import addon bug
+* Bug: Customising form with CSS is not easy
+* Bug: Bug Regarding Pagination Feature
+* Feature: User wants a logic to work in the same way for Checkbox & Multiple choice questions
+* Feature: Provide an export button on top of quiz index
+
+= 6.3.6 (Nov 28, 2019) =
+* Included all the suggestions made by WordPress.org team
+* Made external files loading from local website
+* Security updates - type safe for all $_GET and $_POST vars
+* Update out of date library (Chart.min.js)
+
+= 6.3.5 (Nov 22, 2019) =
+* New Design Elements
+* Show page count for multipage quizzes
+* Get Quiz and Survey Data Using Wordpress API (https://github.com/QuizandSurveyMaster/quiz_master_next/issues/769)
+* Filters and hooks listed on documentation
+* Animations/transition options for questions (https://github.com/QuizandSurveyMaster/quiz_master_next/issues/719)
+* Bug: WordPress embed shortcode does not work in question
+* Remove advertisement from top bar in quizzes
+* Results table design change
+* XSS Vulnerability (https://github.com/QuizandSurveyMaster/quiz_master_next/issues/795)
+
+= 6.3.4 (Oct 24, 2019) =
+* Massive overhaule for being responsive in admin panel.
+* Checkbox limit ([Issue #743] https://github.com/QuizandSurveyMaster/quiz_master_next/issues/743)
+* Logic addon bug ([Issue #760] https://github.com/QuizandSurveyMaster/quiz_master_next/issues/760)
+* Add filter to results array ([Issue #785] https://github.com/QuizandSurveyMaster/quiz_master_next/issues/785)
+
+= 6.3.3 (Oct 04, 2019) =
+* Option to disable "retake" quiz option.
+* Mouse pointer over the FB / TW buttons
+* Translate for "Retake Quiz" ([Issue #773] https://github.com/QuizandSurveyMaster/quiz_master_next/issues/773)
+* Radio buttons hard to select ([WP Issue] (https://wordpress.org/support/topic/radio-buttons-are-hard-to-select-on-mobile-devices/))
+* Results page enhancements
+
+= 6.3.2 (July 06, 2019) =
+* UI Changes
+* Addons Pricing Page Update
+* Free Addon Page Added
+* Show results of quiz in realtime - #646
+* Timer Enhacements - Auto submit at expiry and show message on expiry
+* Personality Quiz Enhancements - Show category on frontend and Show results per category
+* Retake Quiz - #661
+* Question Bank Enhacements - #39
+* Facebook Button Icons
+
+= 6.3.1 (May 19, 2019) =
+* Closed Bug: Duplicate post issue ([Issue #758](https://github.com/QuizandSurveyMaster/quiz_master_next/issues/758))
+* Closed Enhancement: Option to turn off autofill ([WP Issue](https://wordpress.org/support/topic/can-you-add-an-option-to-turn-off-autofill-on-galaxy-phones-and-other-devices/))
+* Added Feature: Preview quiz within the quiz edit page.
+* Added Feature: Auto save quiz and questions
+* Closed Enhancement: Disable autofill for contact fields ([Issue #718](https://github.com/QuizandSurveyMaster/quiz_master_next/issues/718))
+* Closed Enhancement: Added %POLL_RESULTS_X% tag for results page to show poll results ([Issue #458](https://github.com/QuizandSurveyMaster/quiz_master_next/issues/458))
+* Closed Bug: Facebook Share not working properly ([WP Issue](https://wordpress.org/support/topic/facebook-share-40/))
+
+
+= 6.3.0 (April 20, 2019) =
+* Massive UI update
+* Closed Enhancement: Support for Image and Rich answers
+([Issue #146](https://github.com/QuizandSurveyMaster/quiz_master_next/issues/146))
+
+= 6.2.2 (March 14, 2019) =
+* Security update as suggested by WordPress team.
+
+= 6.2.1 (February 20, 2019) =
+* Fixes cut off submit button on mobile phone issue
+* Switches "Frank Corso" with "QSM Team" in relevant places
+
+= 6.2.0 (January 31, 2019) =
+* Closed Enhancement: Create new alert system on quiz options page ([Issue #754](https://github.com/QuizandSurveyMaster/quiz_master_next/issues/754))
+* Closed Bug: No access allowed when clicking "Support" from plugins page ([Issue #753](https://github.com/QuizandSurveyMaster/quiz_master_next/issues/753))
+* Closed Bug: To many redirects ([Issue #745](https://github.com/QuizandSurveyMaster/quiz_master_next/issues/745))
+* Closed User Request: Allow default email to be deleted or turned off ([Issue #735](https://github.com/QuizandSurveyMaster/quiz_master_next/issues/735))
+* Closed Enhancement: Rewrite emails to allow for different conditions ([Issue #379](https://github.com/QuizandSurveyMaster/quiz_master_next/issues/379))
+* Closed Enhancement: Rewrite results pages to allow for different conditions ([Issue #378](https://github.com/QuizandSurveyMaster/quiz_master_next/issues/378))
+
+([Read Full Changelog](https://github.com/QuizandSurveyMaster/quiz_master_next/blob/master/CHANGELOG.md))
+
+== Upgrade Notice ==
+
+= 6.2.1 =
+Upgrade to fix cut submit button on mobile issue
