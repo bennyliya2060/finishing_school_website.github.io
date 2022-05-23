@@ -1,16 +1,34 @@
+# Only allow direct access to specific Web-available files.
 
-# BEGIN WordPress
-# The directives (lines) between "BEGIN WordPress" and "END WordPress" are
-# dynamically generated, and should only be modified via WordPress filters.
-# Any changes to the directives between these markers will be overwritten.
-<IfModule mod_rewrite.c>
-RewriteEngine On
-RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]
-RewriteBase /wordpress/
-RewriteRule ^index\.php$ - [L]
-RewriteCond %{REQUEST_FILENAME} !-f
-RewriteCond %{REQUEST_FILENAME} !-d
-RewriteRule . /wordpress/index.php [L]
+# Apache 2.2
+<IfModule !mod_authz_core.c>
+	Order Deny,Allow
+	Deny from all
 </IfModule>
 
-# END WordPress
+# Apache 2.4
+<IfModule mod_authz_core.c>
+	Require all denied
+</IfModule>
+
+# Akismet CSS and JS
+<FilesMatch "^(form\.js|akismet\.js|akismet\.css)$">
+	<IfModule !mod_authz_core.c>
+		Allow from all
+	</IfModule>
+	
+	<IfModule mod_authz_core.c>
+		Require all granted
+	</IfModule>
+</FilesMatch>
+
+# Akismet images
+<FilesMatch "^logo-(a|full)-2x\.png$">
+	<IfModule !mod_authz_core.c>
+		Allow from all
+	</IfModule>
+	
+	<IfModule mod_authz_core.c>
+		Require all granted
+	</IfModule>
+</FilesMatch>
