@@ -1,6 +1,6 @@
 <?php
 /**
- * User Dashboard Administration Screen
+ * Edit user administration panel.
  *
  * @package WordPress
  * @subpackage Administration
@@ -10,4 +10,4 @@
 /** Load WordPress Administration Bootstrap */
 require_once __DIR__ . '/admin.php';
 
-require ABSPATH . 'wp-admin/index.php';
+require ABSPATH . 'wp-admin/user-edit.php';
