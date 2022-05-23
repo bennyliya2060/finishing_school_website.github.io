@@ -1,153 +1,104 @@
 <?php
 
-/**
- * Determine the current locale desired for the request.
- *
- * @since 5.0.0
- *
- * @global string $pagenow
- *
- * @return string The determined locale.
- */
-if ( ! function_exists( 'determine_locale' ) ) :
-	function determine_locale() {
-		/**
-		 * Filters the locale for the current request prior to the default determination process.
-		 *
-		 * Using this filter allows to override the default logic, effectively short-circuiting the function.
-		 *
-		 * @since 5.0.0
-		 *
-		 * @param string|null The locale to return and short-circuit, or null as default.
-		 */
-		$determined_locale = apply_filters( 'pre_determine_locale', null );
-		if ( ! empty( $determined_locale ) && is_string( $determined_locale ) ) {
-			return $determined_locale;
-		}
+function wpcf7_l10n() {
+	static $l10n = array();
 
-		$determined_locale = get_locale();
-
-		if ( function_exists( 'get_user_locale' ) && is_admin() ) {
-			$determined_locale = get_user_locale();
-		}
-
-		if ( function_exists( 'get_user_locale' ) && isset( $_GET['_locale'] ) && 'user' === $_GET['_locale'] ) {
-			$determined_locale = get_user_locale();
-		}
-
-		if ( ! empty( $_GET['wp_lang'] ) && ! empty( $GLOBALS['pagenow'] ) && 'wp-login.php' === $GLOBALS['pagenow'] ) {
-			$determined_locale = sanitize_text_field( $_GET['wp_lang'] );
-		}
-
-		/**
-		 * Filters the locale for the current request.
-		 *
-		 * @since 5.0.0
-		 *
-		 * @param string $locale The locale.
-		 */
-		return apply_filters( 'determine_locale', $determined_locale );
+	if ( ! empty( $l10n ) ) {
+		return $l10n;
 	}
-endif;
 
-/*
- * acf_get_locale
- *
- * Returns the current locale.
- *
- * @date    16/12/16
- * @since   5.5.0
- *
- * @param   void
- * @return  string
- */
-function acf_get_locale() {
+	if ( ! is_admin() ) {
+		return $l10n;
+	}
 
-	// Determine local.
-	$locale = determine_locale();
+	require_once( ABSPATH . 'wp-admin/includes/translation-install.php' );
 
-	// Fallback to parent language for regions without translation.
-	// https://wpastra.com/docs/complete-list-wordpress-locale-codes/
-	$langs = array(
-		'az_TR' => 'az',        // Azerbaijani (Turkey)
-		'zh_HK' => 'zh_TW',     // Chinese (Hong Kong)
-		'nl_BE' => 'nl_NL',     // Dutch (Belgium)
-		'fr_BE' => 'fr_FR',     // French (Belgium)
-		'nn_NO' => 'nb_NO',     // Norwegian (Nynorsk)
-		'fa_AF' => 'fa_IR',     // Persian (Afghanistan)
-		'ru_UA' => 'ru_RU',     // Russian (Ukraine)
+	$api = translations_api( 'plugins', array(
+		'slug' => 'contact-form-7',
+		'version' => WPCF7_VERSION,
+	) );
+
+	if ( is_wp_error( $api )
+	or empty( $api['translations'] ) ) {
+		return $l10n;
+	}
+
+	foreach ( (array) $api['translations'] as $translation ) {
+		if ( ! empty( $translation['language'] )
+		and ! empty( $translation['english_name'] ) ) {
+			$l10n[$translation['language']] = $translation['english_name'];
+		}
+	}
+
+	return $l10n;
+}
+
+function wpcf7_is_valid_locale( $locale ) {
+	$pattern = '/^[a-z]{2,3}(?:_[a-zA-Z_]{2,})?$/';
+	return (bool) preg_match( $pattern, $locale );
+}
+
+function wpcf7_is_rtl( $locale = '' ) {
+	static $rtl_locales = array(
+		'ar' => 'Arabic',
+		'ary' => 'Moroccan Arabic',
+		'azb' => 'South Azerbaijani',
+		'fa_IR' => 'Persian',
+		'haz' => 'Hazaragi',
+		'he_IL' => 'Hebrew',
+		'ps' => 'Pashto',
+		'ug_CN' => 'Uighur',
 	);
-	if ( isset( $langs[ $locale ] ) ) {
-		$locale = $langs[ $locale ];
+
+	if ( empty( $locale )
+	and function_exists( 'is_rtl' ) ) {
+		return is_rtl();
 	}
 
-	/**
-	 * Filters the determined local.
-	 *
-	 * @date    8/1/19
-	 * @since   5.7.10
-	 *
-	 * @param   string $locale The local.
-	 */
-	return apply_filters( 'acf/get_locale', $locale );
-}
-
-/**
- * acf_load_textdomain
- *
- * Loads the plugin's translated strings similar to load_plugin_textdomain().
- *
- * @date    8/1/19
- * @since   5.7.10
- *
- * @param   string $locale The plugin's current locale.
- * @return  void
- */
-function acf_load_textdomain( $domain = 'acf' ) {
-
-	/**
-	 * Filters a plugin's locale.
-	 *
-	 * @date    8/1/19
-	 * @since   5.7.10
-	 *
-	 * @param   string $locale The plugin's current locale.
-	 * @param   string $domain Text domain. Unique identifier for retrieving translated strings.
-	 */
-	$locale = apply_filters( 'plugin_locale', acf_get_locale(), $domain );
-	$mofile = $domain . '-' . $locale . '.mo';
-
-	// Try to load from the languages directory first.
-	if ( load_textdomain( $domain, WP_LANG_DIR . '/plugins/' . $mofile ) ) {
-		return true;
+	if ( empty( $locale ) ) {
+		$locale = determine_locale();
 	}
 
-	// Load from plugin lang folder.
-	return load_textdomain( $domain, acf_get_path( 'lang/' . $mofile ) );
+	return isset( $rtl_locales[$locale] );
 }
 
- /**
-  * _acf_apply_language_cache_key
-  *
-  * Applies the current language to the cache key.
-  *
-  * @date    23/1/19
-  * @since   5.7.11
-  *
-  * @param   string $key The cache key.
-  * @return  string
-  */
-function _acf_apply_language_cache_key( $key ) {
+function wpcf7_load_textdomain( $locale = '' ) {
+	static $locales = array();
 
-	// Get current language.
-	$current_language = acf_get_setting( 'current_language' );
-	if ( $current_language ) {
-		$key = "{$key}:{$current_language}";
+	if ( empty( $locales ) ) {
+		$locales = array( determine_locale() );
 	}
 
-	// Return key.
-	return $key;
-}
+	$available_locales = array_merge(
+		array( 'en_US' ),
+		get_available_languages()
+	);
 
-// Hook into filter.
-add_filter( 'acf/get_cache_key', '_acf_apply_language_cache_key' );
+	if ( ! in_array( $locale, $available_locales ) ) {
+		$locale = $locales[0];
+	}
+
+	if ( $locale === end( $locales ) ) {
+		return false;
+	} else {
+		$locales[] = $locale;
+	}
+
+	$domain = WPCF7_TEXT_DOMAIN;
+
+	if ( is_textdomain_loaded( $domain ) ) {
+		unload_textdomain( $domain );
+	}
+
+	$mofile = sprintf( '%s-%s.mo', $domain, $locale );
+
+	$domain_path = path_join( WPCF7_PLUGIN_DIR, 'languages' );
+	$loaded = load_textdomain( $domain, path_join( $domain_path, $mofile ) );
+
+	if ( ! $loaded ) {
+		$domain_path = path_join( WP_LANG_DIR, 'plugins' );
+		load_textdomain( $domain, path_join( $domain_path, $mofile ) );
+	}
+
+	return true;
+}

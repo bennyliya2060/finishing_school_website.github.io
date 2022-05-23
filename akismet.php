@@ -1,66 +1,158 @@
 <?php
 /**
- * @package Akismet
- */
-/*
-Plugin Name: Akismet Anti-Spam
-Plugin URI: https://akismet.com/
-Description: Used by millions, Akismet is quite possibly the best way in the world to <strong>protect your blog from spam</strong>. It keeps your site protected even while you sleep. To get started: activate the Akismet plugin and then go to your Akismet Settings page to set up your API key.
-Version: 4.2.1
-Author: Automattic
-Author URI: https://automattic.com/wordpress-plugins/
-License: GPLv2 or later
-Text Domain: akismet
-*/
+** Akismet Filter
+** Akismet API: http://akismet.com/development/api/
+**/
 
-/*
-This program is free software; you can redistribute it and/or
-modify it under the terms of the GNU General Public License
-as published by the Free Software Foundation; either version 2
-of the License, or (at your option) any later version.
+add_filter( 'wpcf7_spam', 'wpcf7_akismet', 10, 2 );
 
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
+function wpcf7_akismet( $spam, $submission ) {
+	if ( $spam ) {
+		return $spam;
+	}
 
-You should have received a copy of the GNU General Public License
-along with this program; if not, write to the Free Software
-Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
+	if ( ! wpcf7_akismet_is_available() ) {
+		return false;
+	}
 
-Copyright 2005-2015 Automattic, Inc.
-*/
+	if ( ! $params = wpcf7_akismet_submitted_params() ) {
+		return false;
+	}
 
-// Make sure we don't expose any info if called directly
-if ( !function_exists( 'add_action' ) ) {
-	echo 'Hi there!  I\'m just a plugin, not much I can do when called directly.';
-	exit;
+	$c = array();
+
+	$c['comment_author'] = $params['author'];
+	$c['comment_author_email'] = $params['author_email'];
+	$c['comment_author_url'] = $params['author_url'];
+	$c['comment_content'] = $params['content'];
+
+	$c['blog'] = get_option( 'home' );
+	$c['blog_lang'] = get_locale();
+	$c['blog_charset'] = get_option( 'blog_charset' );
+	$c['user_ip'] = $_SERVER['REMOTE_ADDR'];
+	$c['user_agent'] = $_SERVER['HTTP_USER_AGENT'];
+	$c['referrer'] = $_SERVER['HTTP_REFERER'];
+	$c['comment_type'] = 'contact-form';
+
+	$datetime = date_create_immutable(
+		'@' . $submission->get_meta( 'timestamp' )
+	);
+
+	if ( $datetime ) {
+		$c['comment_date_gmt'] = $datetime->format( DATE_ATOM );
+	}
+
+	if ( $permalink = get_permalink() ) {
+		$c['permalink'] = $permalink;
+	}
+
+	$ignore = array( 'HTTP_COOKIE', 'HTTP_COOKIE2', 'PHP_AUTH_PW' );
+
+	foreach ( $_SERVER as $key => $value ) {
+		if ( ! in_array( $key, (array) $ignore ) ) {
+			$c["$key"] = $value;
+		}
+	}
+
+	$c = apply_filters( 'wpcf7_akismet_parameters', $c );
+
+	if ( wpcf7_akismet_comment_check( $c ) ) {
+		$spam = true;
+
+		$submission->add_spam_log( array(
+			'agent' => 'akismet',
+			'reason' => __( "Akismet returns a spam response.", 'contact-form-7' ),
+		) );
+	} else {
+		$spam = false;
+	}
+
+	return $spam;
 }
 
-define( 'AKISMET_VERSION', '4.2.1' );
-define( 'AKISMET__MINIMUM_WP_VERSION', '5.0' );
-define( 'AKISMET__PLUGIN_DIR', plugin_dir_path( __FILE__ ) );
-define( 'AKISMET_DELETE_LIMIT', 100000 );
+function wpcf7_akismet_is_available() {
+	if ( is_callable( array( 'Akismet', 'get_api_key' ) ) ) {
+		return (bool) Akismet::get_api_key();
+	}
 
-register_activation_hook( __FILE__, array( 'Akismet', 'plugin_activation' ) );
-register_deactivation_hook( __FILE__, array( 'Akismet', 'plugin_deactivation' ) );
-
-require_once( AKISMET__PLUGIN_DIR . 'class.akismet.php' );
-require_once( AKISMET__PLUGIN_DIR . 'class.akismet-widget.php' );
-require_once( AKISMET__PLUGIN_DIR . 'class.akismet-rest-api.php' );
-
-add_action( 'init', array( 'Akismet', 'init' ) );
-
-add_action( 'rest_api_init', array( 'Akismet_REST_API', 'init' ) );
-
-if ( is_admin() || ( defined( 'WP_CLI' ) && WP_CLI ) ) {
-	require_once( AKISMET__PLUGIN_DIR . 'class.akismet-admin.php' );
-	add_action( 'init', array( 'Akismet_Admin', 'init' ) );
+	return false;
 }
 
-//add wrapper class around deprecated akismet functions that are referenced elsewhere
-require_once( AKISMET__PLUGIN_DIR . 'wrapper.php' );
+function wpcf7_akismet_submitted_params() {
+	$params = array(
+		'author' => '',
+		'author_email' => '',
+		'author_url' => '',
+		'content' => '',
+	);
 
-if ( defined( 'WP_CLI' ) && WP_CLI ) {
-	require_once( AKISMET__PLUGIN_DIR . 'class.akismet-cli.php' );
+	$has_akismet_option = false;
+
+	foreach ( (array) $_POST as $key => $val ) {
+		if ( '_wpcf7' == substr( $key, 0, 6 )
+		or '_wpnonce' == $key ) {
+			continue;
+		}
+
+		if ( is_array( $val ) ) {
+			$val = implode( ', ', wpcf7_array_flatten( $val ) );
+		}
+
+		$val = trim( $val );
+
+		if ( 0 == strlen( $val ) ) {
+			continue;
+		}
+
+		if ( $tags = wpcf7_scan_form_tags( array( 'name' => $key ) ) ) {
+			$tag = $tags[0];
+
+			$akismet = $tag->get_option( 'akismet',
+				'(author|author_email|author_url)', true
+			);
+
+			if ( $akismet ) {
+				$has_akismet_option = true;
+
+				if ( 'author' == $akismet ) {
+					$params[$akismet] = trim( $params[$akismet] . ' ' . $val );
+					continue;
+				} elseif ( '' == $params[$akismet] ) {
+					$params[$akismet] = $val;
+					continue;
+				}
+			}
+		}
+
+		$params['content'] .= "\n\n" . $val;
+	}
+
+	if ( ! $has_akismet_option ) {
+		return false;
+	}
+
+	$params['content'] = trim( $params['content'] );
+
+	return $params;
+}
+
+function wpcf7_akismet_comment_check( $comment ) {
+	$spam = false;
+	$query_string = wpcf7_build_query( $comment );
+
+	if ( is_callable( array( 'Akismet', 'http_post' ) ) ) {
+		$response = Akismet::http_post( $query_string, 'comment-check' );
+	} else {
+		return $spam;
+	}
+
+	if ( 'true' == $response[1] ) {
+		$spam = true;
+	}
+
+	if ( $submission = WPCF7_Submission::get_instance() ) {
+		$submission->akismet = array( 'comment' => $comment, 'spam' => $spam );
+	}
+
+	return apply_filters( 'wpcf7_akismet_comment_check', $spam, $comment );
 }
